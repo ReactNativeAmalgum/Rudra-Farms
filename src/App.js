@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Rooms from "./Pages/Rooms";
+import Contact_Us from "./Pages/Contact_Us";
+import Services from "./Pages/Services";
+import Weedings from "./Pages/Weedings";
+import Experience from "./Pages/Experience";
+import Faq from "./Pages/Faq";
+import Blogs from "./Pages/Blogs";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import About from "./Pages/About";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/rooms" element={<Rooms/>} />
+          <Route path="/contact" element={<Contact_Us />} />
+          <Route path="/service" element={<Services/>} />
+          <Route path="/weedings" element={<Weedings/>} />
+          <Route path="/experience" element={<Experience/>} />
+          <Route path="/faq" element={<Faq/>} />
+          <Route path="/blogs" element={<Blogs/>} />
+
+        </Routes>
+      </>
+    </Router>
   );
 }
 
