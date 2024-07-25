@@ -1,0 +1,270 @@
+.about-body-cont {
+  position: relative;
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden; /* Ensure pseudo-element stays within bounds */
+  color: white;
+}
+
+.about-body-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%) blur(0px); /* Apply shadow effect */
+  z-index: 1; /* Ensure pseudo-element is behind content */
+}
+
+.about-body-cont h1 {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+  z-index: 2; /* Ensure text is above pseudo-element */
+}
+/*********************Section1***********************/
+.section1-body-cont {
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.section1-body-cont p {
+  font-size: 24px;
+  font-family: "Cormorant Garamond", sans-serif;
+}
+.numbers {
+  display: flex;
+  margin-top: 50px;
+  width: 95%;
+  /* background-color: aqua; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+.num-events {
+  display: flex;
+  flex-direction: column;
+}
+.descp-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.descp-span-cont {
+  /* background-color: brown; */
+  width: 50%;
+  text-align: center;
+}
+
+.numbers h3 {
+  font-size: 56px;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+}
+.numbers span {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 14px;
+  flex-grow: 1px;
+  flex-shrink: 1px;
+}
+/*******************Section 3********************/
+
+/* .description-img-cont {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  justify-content: space-between; 
+  align-items: left; 
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.description-img-cont > div {
+  width: 45%;
+}
+
+.description-img-cont img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.description-img-cont h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.description-img-cont h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.description-img-cont p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+.img-cont {
+  width: 20%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  */
+
+.section2-body-cont {
+  position: relative;
+  padding-top: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  overflow: hidden; /* Ensure pseudo-element stays within bounds */
+  color: white;
+}
+
+/* .description-body-cont{
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  background-color: blue;
+  height: 500px;
+  justify-content: center;
+
+  text-align: left;
+  flex-direction: row;
+}
+.descrption{
+  background-color: aqua;
+  width: 40%;
+}
+.descrption h3{
+  font-family: 'Cormorant Garamond';
+  font-weight: 700;
+  font-size: 36px;
+}
+.descrption h2{
+  font-family: 'Cormorant Garamond';
+  font-weight: 700;
+  font-size: 48px;
+}
+.descrption p{
+  font-family: 'Jost';
+  font-weight: 400;
+  margin-block-end: 29.25px;
+  margin-bottom: 29.25px;
+  font-size: 18px;
+}
+.img-cont{
+  background-color: aquamarine;
+  width: 20px;
+  height: 20px;
+} */
+
+.row {
+  /* background-color: aqua; */
+}
+
+.col-6 img {
+  align-self: flex-end;
+  padding-left: 50px;
+  width: 95%;
+  height: 600px;
+}
+
+.col-6 {
+  color: black;
+  text-align: left;
+}
+
+.col-6 h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 36;
+  font-weight: 700;
+}
+.col-6 h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 48px;
+  font-weight: 700;
+}
+.col-6 p {
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/***************section-vision*******************/
+
+.about-vision-cont {
+  position: relative;
+  padding-top: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  overflow: hidden; /* Ensure pseudo-element stays within bounds */
+  color: white;
+}
+.vision-container {
+  width: 80%;
+  padding-top: 30px;
+  /* background-color: aqua; */
+}
+.vision-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.right-vision-col-6 {
+  display: flex;
+  width: 300px;
+  /* background-color: blue; */
+}
+.right-vision-col-6 h2{
+  font-family: "Cormorant Garamond";
+  font-size: 48px;
+
+}
+
+.left-vision-col-6 h3{
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  font-size: 36px;
+  text-align: center;
+}
+
+.left-vision-col-6 p{
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Jost';
+  text-align: center;
+  padding-left: 50px;
+}
