@@ -5,14 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 // import './styles.css';
-
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-import '../Css/Home.css'
+import "../Css/Home.css";
+
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
@@ -119,7 +118,7 @@ export default function Home() {
               Spa and Massage at the Serene Rudra Farms Luxury Mountain Resort
             </h3>
             <div className="btn-cont">
-              <span>Find OUT MORE</span>
+              <span>FIND OUT MORE</span>
             </div>
           </div>
         </div>
@@ -136,6 +135,104 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <div className="acc-swiper-cont">
+          <Swiper
+            navigation={true}
+            modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
+            className="mySwiper"
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 1000, // Delay between slides in ms
+              disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            }}
+            slidesPerView={3}
+            breakpoints={{
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1478-HDRcmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1394-HDRcmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1524-HDRcmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <a className="">
+          <span>BOOK NOW</span>
+        </a>
       </section>
       <section className="home-exp-cont">
         <div className="exp-description">
@@ -148,6 +245,101 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <div className="acc-swiper-cont">
+          <Swiper
+            navigation={true}
+            modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
+            className="mySwiper"
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 1000, // Delay between slides in ms
+              disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            }}
+            slidesPerView={3}
+            breakpoints={{
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 100,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1478-HDRcmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1394-HDRcmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1524-HDRcmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">
+                      Maharaja Family Bedroom
+                    </h3>
+                    <span className="acc-swiper-card-text-s">
+                      4 beds / 2 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
         <div className="exp-description-2">
           <span className="exp-span">
             READ MORE ABOUT OUR RESORT THROUGH OUR BLOGS
@@ -157,10 +349,14 @@ export default function Home() {
               Experience the Pinnacle of Relaxation and Escape to Malhar Machi
               Luxury Mountain Resort
             </h3>
-            <p>Luxury Resort in Pune</p>
-            <p>Resort near Mulshi lake Pune</p>
-            <p>Resort near Pune for Weekende</p>
-            <p>Resort near Pune for Weekend</p>
+            <div className="exp-p-cont">
+              <a className="exp-p-cont-a">
+              Luxury Resort in Pune
+              </a>
+              <a>Resort near Mulshi lake Pune</a>
+              <a>Resort near Pune for Weekende</a>
+              <a>Resort near Pune for Weekend</a>
+            </div>
           </div>
         </div>
       </section>
