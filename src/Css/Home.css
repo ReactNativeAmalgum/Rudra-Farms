@@ -10,7 +10,10 @@
   text-align: center;
 }
 
-/* .image-slider {
+html{
+  overflow-x: hidden;
+}
+.image-slider {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -43,7 +46,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-} */
+}
 .title {
   position: absolute;
   top: 50%;
@@ -108,7 +111,7 @@
   padding-top: 10px;
   flex-direction: row;
   align-items: center;
-  gap:15px;
+  gap: 15px;
   justify-content: center;
 }
 .image-cont img {
@@ -204,22 +207,30 @@
 }
 .btn-cont {
   text-align: center;
+  padding-top: 30px;
   display: block;
   font-family: "Jost";
 }
 
+.btn-cont span:hover {
+  background-color: rgba(185, 92, 71);
+}
 .btn-cont span {
   border: 1px solid;
+
   padding: 10px;
-  border-radius: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 3px;
   font-weight: 500px;
-  font-size: 19px;
+  font-family: "Jost";
+  font-size: 15px;
 }
 
 /**************************Section 4****************************/
 
 .home-acco-cont {
-  padding: 50px ;
+  padding: 50px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -239,7 +250,8 @@
   font-family: "Jost";
   letter-spacing: 4px;
   font-weight: 500;
-  color: rgba(185, 92, 71);  margin-bottom: 10px;
+  color: rgba(185, 92, 71);
+  margin-bottom: 10px;
 }
 
 .acco-h3-cont {
@@ -262,55 +274,108 @@
   /* margin-bottom: 29.5px; */
 }
 
-.swiper-card-cont{
-  background-color: aqua;
-  width: 100%;
-  padding: 10%;
+.acc-swiper-cont {
+  width: 85%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
-.swiper-card {
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acc-swiper-card-cont {
   position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.acc-wiper-card-cont-img {
+  position: relative; /* Necessary for ::after positioning */
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: aqua; /* Optional */
 }
 
-.swiper-card-div {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the div */
-}
-
-.swiper-card-overlay {
+.acc-wiper-card-cont-img::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Background color with rgba */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.3); /* Overlay effect */
+  pointer-events: none; /* Ensure overlay does not block interactions */
+  z-index: 1; /* Ensure overlay appears on top of the image */
 }
 
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Shadow effect on the image */
+  position: relative; /* Needed for the ::after pseudo-element positioning */
+  z-index: 0; /* Ensure image is below the overlay */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: aliceblue;
+}
+.acc-swiper-card-text {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  /* left: 10px; */
+  /* background-color: aqua; */
+  justify-content: center;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+.acc-swiper-card-text-h {
+  font-size: 28px;
+  font-family: "Cormorant Garamond";
+}
+.acc-swiper-card-text-s {
+  font-size: 18px;
+  font-family: "Jost";
+}
+/* Ensure the pagination container is positioned relative to the Swiper container */
+.swiper-pagination {
+  position: relative; /* Adjust as needed */
+}
 
+/* Styles for clickable pagination bullets */
+.swiper-pagination-clickable {
 
+}
+
+/* Position bullets outside of the Swiper container */
+.swiper-pagination-bullets {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* background-color: aliceblue; */
+  padding: 20px;
+  height: 20px;
+}
+
+/* Styles for horizontal pagination layout */
+.swiper-pagination-horizontal {
+  /* You can customize horizontal pagination if needed */
+}
 /***********************Experience*********************************/
 .home-exp-cont {
-  padding: 50px ;
+  padding: 50px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -329,11 +394,12 @@
   font-family: "Jost";
   letter-spacing: 4px;
   font-weight: 500;
-  color: rgba(185, 92, 71);  margin-bottom: 10px;
+  color: rgba(185, 92, 71);
+  margin-bottom: 10px;
 }
 
 .exp-h3-cont {
-  max-width: 900px;
+  max-width: 1000px;
   /* margin: 0 auto; */
 }
 
@@ -352,8 +418,37 @@
   /* margin-bottom: 29.5px; */
 }
 
-
-.exp-description-2{
+.exp-description-2 {
   padding-top: 90px;
-
+}
+.exp-p-cont{
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.exp-p-cont-a{
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  font-family: 'Jost';
+  font-weight: 300;
+}
+.home-acco-cont a {
+  margin-top: 10%;
+  color: aqua;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(185, 92, 71);
+}
+.home-acco-cont a span {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 .row {
   display: flex;
@@ -38,9 +38,6 @@
 
 .right-header-col-2 {
   flex: 1;
-  /* background-color: pink; */
-  height: 100%;
-  align-items: center;
   text-align: center;
 }
 
@@ -78,21 +75,17 @@
   font-weight: 400;
 }
 
-.right-header-col-2-cont {
-  background-color: aqua;
-}
 
 .right-header-col-4-cont {
-  background-color: red;
-  border-radius: 5px;
-  width: 150px; /* Adjusted width */
-  height: 50px;
+  margin-bottom: 15px;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  /* padding-top: 40px; */
+  flex-direction: row;
+  background-color: red;
+  border-radius: 3px;
+  width: 150px; 
+  height: 40px;
 }
 
 .right-header-col-4-cont img {
@@ -103,5 +96,5 @@
   font-size: 18px;
   color: white; /* Ensures text is visible on aqua background */
   padding: 7px;
-  margin:0px;
+  margin: 0px;
 }
