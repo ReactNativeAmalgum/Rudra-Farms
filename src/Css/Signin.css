@@ -1,0 +1,20 @@
+body {
+  background-color: #508bfc;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff; /* Optional: match Bootstrap primary color */
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  
+}
+
+.register-text span {
+  text-decoration: underline;
+  color:red;
+  text-decoration: none;
+}

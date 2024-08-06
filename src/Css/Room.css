@@ -1,0 +1,377 @@
+/* Base Styles */
+.rooom-body-cont {
+  position: relative;
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rooom-body-cont::before {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://th.bing.com/th/id/R.88266eddb0ea3848a2f230273474848c?rik=KvfESeYjZEYwVQ&riu=http%3a%2f%2fwww.pinegrovemountainlodge.com%2fwp-content%2fuploads%2f2017%2f02%2fDSC00141.jpg&ehk=6t1gy7IXa6pb4UhJYq7Gpfj6LeZH1fxcqHRG%2fvW2IUw%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%) blur(0px); /* Apply shadow effect */
+  /* z-index: 1; */
+
+}
+
+.rooom-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+.rooom-body-cont h1 {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 56px;
+  overflow-wrap: break-word;
+  z-index: 1000; /* Ensure text is above pseudo-element */
+}
+.rooom-body-cont-title {
+  font-size: 56px;
+  color: white;
+  font-weight: 700;
+  z-index: 1000;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.section1-rooom-body-cont {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 56px;
+  overflow-wrap: break-word;
+  z-index: 1000; /* Ensure text is above pseudo-element */
+}
+
+.rooom-row-cont {
+  height: 100%;
+  padding-left: 20px;
+  /* background-color: blue; */
+}
+
+.rooom-row-cont a {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.rooom-row-cont p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+
+.rooom-column-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.rooom-column-txt-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.rooom-column-txt-alt .rooom-details {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.rooom-column-txt-alt .rooom-details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 1px);
+  height: 0.8px;
+  background-color: rgb(26, 26, 26);
+}
+
+.rooom-column-txt-alt .rooom-descp1 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.rooom-column-txt .rooom-details {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.rooom-column-txt .rooom-details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 1px);
+  height: 0.8px;
+  background-color: rgb(26, 26, 26);
+}
+
+.rooom-column-txt .rooom-descp1 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.onlyImg {
+  width: 510px;
+  height: 510px;
+  /* background-color: aqua; */
+}
+
+.bed-rooom-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  flex-direction: row;
+}
+
+.inner-bed-rooom-cont {
+  display: flex;
+  gap: 30px;
+}
+
+.fw-400 {
+  font-weight: 100;
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fm-Jost {
+  font-family: "Jost", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.alt-right-col-cont {
+  padding-left: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .rooom-body-cont-title {
+    font-size: 40px;
+  }
+
+  .rooom-row-cont a {
+    font-size: 30px;
+  }
+
+  .rooom-row-cont p {
+    font-size: 16px;
+  }
+
+  .rooom-column-txt .rooom-details {
+    font-size: 14px;
+  }
+
+  .rooom-column-txt-alt .rooom-details {
+    font-size: 14px;
+  }
+
+  .bed-rooom-cont {
+    font-size: 16px;
+  }
+  .rooom-row-cont {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+  .rooom-column-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .onlyImg {
+    width: 400px !important;
+    height: 380px !important;
+  }
+  .onlyImg img {
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 647px) {
+  .rooom-body-cont {
+    height: 60vh;
+  }
+
+  .rooom-body-cont-title {
+    font-size: 32px;
+  }
+
+  .section1-rooom-body-cont {
+    height: auto;
+  }
+
+  .rooom-row-cont a {
+    font-size: 24px;
+  }
+
+  .rooom-row-cont p {
+    font-size: 14px;
+  }
+
+  .rooom-column-txt .rooom-details {
+    font-size: 12px;
+  }
+
+  .rooom-column-txt-alt .rooom-details {
+    font-size: 12px;
+  }
+
+  .onlyImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .bed-rooom-cont {
+    font-size: 14px;
+  }
+
+  .alt-right-col-cont {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rooom-body-cont {
+    height: 65vh;
+  }
+
+  .rooom-body-cont-title {
+    font-size: 36px;
+  }
+
+  .section1-rooom-body-cont {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .rooom-row-cont a {
+    font-size: 26px;
+  }
+
+  .rooom-row-cont p {
+    font-size: 15px;
+  }
+
+  .rooom-column-txt .rooom-details {
+    font-size: 13px;
+  }
+
+  .rooom-column-txt-alt .rooom-details {
+    font-size: 13px;
+  }
+  .col-6 img {
+    /* width: 0px!important; */
+  }
+  .onlyImg {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .onlyImg {
+    width: 50% !important;
+    height: 100% !important;
+  }
+  .bed-rooom-cont {
+    font-size: 15px;
+  }
+
+  .alt-right-col-cont {
+    padding-left: 30px;
+  }
+  .rooom-row-cont {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+  .rooom-column-txt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .rooom-body-cont {
+    height: 50vh;
+    padding: 20px;
+  }
+
+  .rooom-body-cont-title {
+    font-size: 28px;
+  }
+
+  .section1-rooom-body-cont {
+    padding-top: 20px;
+  }
+
+  .rooom-row-cont a {
+    font-size: 20px;
+  }
+
+  .rooom-row-cont p {
+    font-size: 13px;
+  }
+
+  .rooom-column-txt .rooom-details {
+    font-size: 11px;
+  }
+
+  .rooom-column-txt-alt .rooom-details {
+    font-size: 11px;
+  }
+
+  .onlyImg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .bed-rooom-cont {
+    font-size: 12px;
+  }
+
+  .alt-right-col-cont {
+    padding-left: 10px;
+  }
+}

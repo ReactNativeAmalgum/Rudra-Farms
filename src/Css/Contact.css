@@ -1,0 +1,597 @@
+.contact-body-cont {
+  position: relative;
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+}
+
+.contact-body-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/7609119/pexels-photo-7609119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%) blur(0px); /* Apply shadow effect */
+  /* z-index: 1; */
+
+}
+.contact-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.contact-body-cont h1 {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 56px;
+  overflow-wrap: break-word;
+  z-index: 1000; /* Ensure text is above pseudo-element */
+}
+
+.img-cont {
+  display: flex;
+  flex-direction: row; /* Stack image and text vertically */
+  align-items: center; /* Center align items horizontally */
+  text-align: center; /* Center align text */
+}
+
+.col-6-contact {
+  margin-top: 10px; /* Space between image and text */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333;
+  padding-left: 10px;
+}
+.contact-body-cont-h1 {
+  position: relative;
+  font-size: 56px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+  z-index: 2; /* Ensure text is above pseudo-element */
+}
+/*********************Section1***********************/
+.section1-body-cont {
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.section1-body-cont p {
+  font-size: 24px;
+  font-family: "Cormorant Garamond", sans-serif;
+}
+
+.contact-span {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-span-cont {
+  /* background-color: brown; */
+  width: 50%;
+  text-align: center;
+}
+.contact-span-cont p {
+  font-weight: 700;
+}
+.numbers h3 {
+  font-size: 56px;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+}
+.numbers span {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 14px;
+  flex-grow: 1px;
+  flex-shrink: 1px;
+}
+/*******************Section 3********************/
+
+.section2-body-cont {
+  position: relative;
+  padding-top: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 30px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  overflow: hidden; /* Ensure pseudo-element stays within bounds */
+  color: white;
+}
+
+.row {
+  /* background-color: aqua; */
+}
+
+.col-6 img {
+  align-self: flex-end;
+  width: 100%;
+}
+
+.col-6 {
+  color: black;
+  text-align: left;
+}
+.col-6-heading {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.col-6 h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 42px;
+  font-weight: 700;
+}
+.col-6 h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 48px;
+  font-weight: 700;
+}
+.col-6-contact {
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.col-6 p {
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 350;
+  margin: 0px;
+}
+.col-6-for {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Cormorant Garamond";
+}
+.col-6 span {
+  font-weight: 400;
+}
+.row-location {
+  padding-top: 30px;
+}
+.col-6-cont {
+  padding: 10px;
+}
+.col-6-for-cont {
+  padding-top: 10px;
+}
+/***************section-vision*******************/
+
+.contact-vision-cont {
+  position: relative;
+  padding-top: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  overflow: hidden; /* Ensure pseudo-element stays within bounds */
+  color: white;
+}
+.vision-container {
+  width: 80%;
+  padding-top: 30px;
+  /* background-color: aqua; */
+}
+.vision-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.right-vision-col-6 {
+  display: flex;
+  width: 300px;
+  /* background-color: blue; */
+}
+.right-vision-col-6 h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 48px;
+}
+
+.left-vision-col-6 h3 {
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  font-size: 36px;
+  text-align: center;
+}
+
+.left-vision-col-6 p {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Jost";
+  text-align: center;
+  padding-left: 50px;
+}
+
+/********************-----------------*************************/
+.left-phone-social-cont {
+  padding: 10px;
+  border-radius: 8px;
+}
+.social-logo-cont {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-col-6 {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  /* border-radius: 8px; */
+}
+
+.contact-col-6 h1 {
+  font-weight: 900;
+  font: 800 52px lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+  text-align: left;
+}
+
+.contact-col-6 h6 {
+  text-align: left;
+}
+
+.form-cont {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-first-last-cont {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  max-width: 100%;
+}
+
+.form-cont textarea {
+  border-radius: 5px;
+}
+.form-first-span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-first-span span,
+.form-cont span {
+  color: white;
+  text-align: left;
+}
+
+.form-first-span input,
+.form-cont input {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-btn-span {
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-send {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+  color: black;
+}
+.form-send span {
+  color: #333;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.left-col-6-email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.left-col-6-email h5 {
+  margin-top: 5px;
+}
+
+.map {
+  /* width: 100%; */
+  bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: -5px;
+}
+.map iframe {
+  width: 100%;
+  height: 20%;
+}
+
+/****************Section-3********************/
+
+.section3-faq {
+  background-color: rgb(246, 246, 250);
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+  /* padding: 5%; */
+}
+.faq-cont {
+  background-color: aqua;
+  width: 90%;
+  flex-direction: column;
+  display: flex;
+
+  justify-content: space-between;
+}
+.section3-faq-row {
+  padding: 2%;
+  height: 200px;
+  display: flex;
+}
+.faq-cont span {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.section3-faq-col-8 {
+  padding-right: 40%;
+}
+.section3-faq-col-2 {
+  width: 300px;
+  align-self: center;
+  justify-content: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+.section3-faq-col-2 {
+  border: 1px solid black;
+  padding: 10px;
+  padding: 3px;
+  height: 60px;
+}
+.section3-faq-col-8 h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+
+.section3-faq-col-8 p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Jost";
+}
+.section3-faq-col-2 {
+  width: 400px;
+  height: 50px;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .section1-body-cont {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .contact-span-cont {
+    width: 70%;
+  }
+  
+  .contact-body-cont-h1 {
+    font-size: 48px;
+  }
+  
+  .section2-body-cont {
+    padding-top: 40px;
+  }
+  
+  .col-6 h3 {
+    font-size: 36px;
+  }
+  
+  .col-6 h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section1-body-cont {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .contact-span-cont {
+    width: 90%;
+  }
+  
+  .contact-body-cont-h1 {
+    font-size: 36px;
+  }
+  
+  .section2-body-cont {
+    padding-top: 30px;
+  }
+  
+  .col-6 h3 {
+    font-size: 30px;
+  }
+  
+  .col-6 h2 {
+    font-size: 36px;
+  }
+  
+  .col-6-contact {
+    font-size: 14px;
+  }
+  
+  .map iframe {
+    height: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1-body-cont {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .contact-span-cont {
+    width: 100%;
+  }
+  
+  .contact-body-cont-h1 {
+    font-size: 28px;
+  }
+  
+  .section2-body-cont {
+    padding-top: 20px;
+  }
+  
+  .col-6 h3 {
+    font-size: 24px;
+  }
+  
+  .col-6 h2 {
+    font-size: 30px;
+  }
+  
+  .form-cont {
+    padding: 1%;
+  }
+  
+  .map iframe {
+    height: 30%;
+  }
+  .form-first-last-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .section3-faq-col-2{
+    width: 600px;
+  }
+  .section3-faq-para{
+    /* background-color: pink; */
+    width: 300px;
+  }
+  .section3-faq-col-2{
+    /* background-color: aqua; */
+  }
+  .section3-faq{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-body-cont-h1 {
+    font-size: 24px;
+  }
+  
+  .section1-body-cont p {
+    font-size: 20px;
+  }
+  
+  .section2-body-cont {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  
+  .col-6 {
+    text-align: center;
+  }
+  
+  .col-6 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .map iframe {
+    height: 40%;
+  }
+  
+  .section3-faq-col-2 {
+    width: 100%;
+    height: auto;
+  }
+  .section2-contact-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .section2-contact-col{
+    width: 100% !important;
+  }
+  .contanct-speacial-width{
+    width: 100% !important;
+  }
+  .section3-faq-row{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .section3-faq-col-8{
+    padding-right: 0px;
+  }
+  .section3-faq-para{
+    text-align: center;
+    width: 100% !important;
+  }
+  .section3-faq-cont{
+    text-align: center;
+  }
+}

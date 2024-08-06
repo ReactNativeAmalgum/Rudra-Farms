@@ -27,7 +27,7 @@
 }
 
 .bar {
-width: 85%;
+  width: 90%;
   height: 0.5px; /* Adjust the height as needed */
   background-color: white; /* White line color */
 }
@@ -42,28 +42,155 @@ width: 85%;
   display: block;
   font-family: "Jost";
   font-size: 16px;
+  color: white;
 }
 
 .col-2 {
   align-items: center;
-
 }
-.social{
+.social {
   /* align-items: center; */
   display: flex;
   flex-direction: footer-row;
-  gap:5px
+  gap: 5px;
 }
-.social .icon{
+.social .icon {
   margin-top: 3px;
 }
-.copywright p{
+.copywright p {
   text-align: center;
   padding-top: 10px;
-  font-family:'Jost';
-  font-size:18px;
-  font-weight:400;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
 }
-.footer-col-6{
+.footer-col-6 {
   color: white;
+}
+.p {
+  color: white;
+}
+
+@media only screen and (max-width: 425px) {
+  .footer-row {
+    flex-direction: column; /* Stack the columns vertically */
+  }
+  
+  .col-2 {
+    width: 100%; /* Full width for extra small screens */
+    text-align: center; /* Center text */
+  }
+  
+  .footer-row h3 {
+    font-size: 20px;
+  }
+
+  .footer-row p {
+    font-size: 14px;
+  }
+  
+  .social {
+    flex-direction: column; /* Stack social icons vertically */
+    align-items: center;
+  }
+
+  .social .icon {
+    margin-top: 5px;
+  }
+}
+
+/* Small screens (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footer-row {
+    flex-direction: column; /* Stack the columns vertically */
+  }
+  
+  .col-2 {
+    width: 100%; 
+    text-align: center;
+  }
+  
+  .footer-row h3 {
+    font-size: 20px;
+  }
+
+  .footer-row p {
+    font-size: 14px;
+  }
+  
+  
+  .social {
+    flex-direction: row; /* Row layout for medium screens */
+    /* justify-content: center; */
+    width: 500px!important;
+    gap:10px
+  }
+
+  .social .icon {
+    margin-top: 3px;
+  }
+
+  .social .icon {
+    margin-top: 5px;
+  }
+}
+
+
+/* Medium screens (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .footer-row {
+    flex-direction: column; /* Stack the columns vertically */
+  }
+  
+  .col-2 {
+    width: 100%; /* Full width for medium screens */
+    text-align: left; /* Align text to left */
+
+  }
+  
+  .footer-row h3 {
+    font-size: 22px;
+  }
+
+  .footer-row p {
+    font-size: 15px;
+  }
+  
+  .social {
+    flex-direction: row; /* Row layout for medium screens */
+    /* justify-content: center; */
+    width: 500px!important;
+    gap:px
+  }
+
+  .social .icon {
+    margin-top: 3px;
+  }
+
+
+}
+
+/* Large screens (desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+  .footer-row {
+    flex-direction: row; /* Row layout for larger screens */
+  }
+
+  .col-2 {
+    width: 24%; /* Adjust column width for larger screens */
+    text-align: left; /* Align text to left */
+  }
+  
+  .footer-row h3 {
+    font-size: 24px;
+  }
+
+  .footer-row p {
+    font-size: 16px;
+  }
+  
+  .social {
+    flex-direction: row; /* Row layout for large screens */
+    align-items: center;
+  }
 }
