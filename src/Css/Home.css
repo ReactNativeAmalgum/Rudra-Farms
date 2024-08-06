@@ -1,5 +1,13 @@
+/* Importing Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global Styles */
+html {
+  overflow-x: hidden;
+}
+
+/* Home Section */
 .home-body-cont {
   position: relative;
   width: 100vw;
@@ -10,9 +18,6 @@
   text-align: center;
 }
 
-html{
-  overflow-x: hidden;
-}
 .image-slider {
   position: absolute;
   width: 100%;
@@ -47,6 +52,7 @@ html{
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 .title {
   position: absolute;
   top: 50%;
@@ -56,49 +62,57 @@ html{
   color: white;
   z-index: 2;
 }
+
 .title span {
-  font-family: "jost", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 4px;
 }
+
 .title h2 {
-  font-family: "orant Garamond";
+  font-family: "Cormorant Garamond";
   font-size: 42px;
-  font-weight: 500;
-  letter-spacing: 4px;
   font-weight: 700;
+  letter-spacing: 4px;
 }
+
 .title p {
   font-family: "Jost", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  color: white;
 }
+
+/* About Section */
 .home-about-cont {
   position: relative;
   width: 100vw;
   padding-top: 85px;
-  align-self: auto;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   text-align: center;
+  box-sizing: border-box;
 }
+
 .description {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 .description span {
   font-family: "Jost", serif;
   letter-spacing: 4px;
   color: rgba(185, 92, 71);
   font-weight: 500;
 }
+
 .description h3 {
   font-family: "Cormorant Garamond";
   font-size: 42px;
   font-weight: 700;
 }
+
 .description p {
   font-family: "Jost";
   font-size: 18px;
@@ -106,6 +120,7 @@ html{
   line-height: 27px;
   margin-bottom: 29.5px;
 }
+
 .image-cont {
   display: flex;
   padding-top: 10px;
@@ -114,26 +129,26 @@ html{
   gap: 15px;
   justify-content: center;
 }
+
 .image-cont img {
   width: 350px;
   height: 450px;
-  border-image-repeat: stretch;
-  border-image-width: 1px;
-  justify-content: space-around;
 }
+
 .image-cont .middle-img {
   padding-top: 15%;
   height: 390px;
 }
+
 .image-cont .soar,
 .image-cont .tie {
   height: 390px;
 }
+
 .wp-caption {
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
   box-sizing: border-box;
 }
+
 .wp-caption figcaption {
   text-align: center;
   color: rgba(90, 90, 90);
@@ -145,9 +160,9 @@ html{
   line-height: 26.08px;
   padding-left: 10px;
   padding-right: 10px;
-  position: relative;
 }
-/*****************Section 3******************/
+
+/* Spa Section */
 .home-spa-cont {
   position: relative;
   width: 100vw;
@@ -157,7 +172,7 @@ html{
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.9);
-  background-image: url("https://thearchitecturedesigns.com/wp-content/uploads/2020/08/spa-room-design-3.jpg");
+  background-image: url("https://images.pexels.com/photos/24805054/pexels-photo-24805054/free-photo-of-view-of-the-terrace-with-a-swimming-pool-at-the-resort.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -167,44 +182,52 @@ html{
   box-sizing: border-box;
   min-height: 80vh;
 }
+
 .home-spa-cont::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
+
 .home-spa-cont > * {
   position: relative;
-
   width: 70%;
   display: flex;
   flex-direction: column;
   text-align: center;
   z-index: 2;
 }
+
 .spa-description {
 }
+
 .spa-span {
   font-family: "Jost", serif;
   letter-spacing: 4px;
   color: white;
   font-weight: 500;
 }
+
 .spa-h3-cont {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
 .spa-h3 {
   font-family: "Cormorant Garamond";
   font-size: 42px;
   font-weight: 700;
 }
+
 .btn-cont {
   text-align: center;
   padding-top: 30px;
@@ -212,23 +235,20 @@ html{
   font-family: "Jost";
 }
 
-.btn-cont span:hover {
-  background-color: rgba(185, 92, 71);
-}
 .btn-cont span {
   border: 1px solid;
-
-  padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 10px 30px;
   border-radius: 3px;
-  font-weight: 500px;
+  font-weight: 500;
   font-family: "Jost";
   font-size: 15px;
 }
 
-/**************************Section 4****************************/
+.btn-cont span:hover {
+  background-color: rgba(185, 92, 71);
+}
 
+/* Accommodations Section */
 .home-acco-cont {
   padding: 50px;
   background-color: white;
@@ -236,7 +256,6 @@ html{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  align-content: center;
 }
 
 .acco-description {
@@ -246,10 +265,9 @@ html{
 .acco-span {
   display: block;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Jost";
   letter-spacing: 4px;
-  font-weight: 500;
   color: rgba(185, 92, 71);
   margin-bottom: 10px;
 }
@@ -269,9 +287,6 @@ html{
   font-family: "Jost";
   font-size: 18px;
   font-weight: 300;
-  padding-top: 0;
-  /* line-height: 27px; */
-  /* margin-bottom: 29.5px; */
 }
 
 .acc-swiper-cont {
@@ -298,7 +313,7 @@ html{
 }
 
 .acc-wiper-card-cont-img {
-  position: relative; /* Necessary for ::after positioning */
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -312,68 +327,59 @@ html{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Overlay effect */
-  pointer-events: none; /* Ensure overlay does not block interactions */
-  z-index: 1; /* Ensure overlay appears on top of the image */
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Shadow effect on the image */
-  position: relative; /* Needed for the ::after pseudo-element positioning */
-  z-index: 0; /* Ensure image is below the overlay */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 0;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   color: aliceblue;
 }
+
 .acc-swiper-card-text {
   position: absolute;
   bottom: 40px;
   width: 100%;
-  /* left: 10px; */
-  /* background-color: aqua; */
   justify-content: center;
   color: aliceblue;
   padding: 10px;
   border-radius: 5px;
   z-index: 2;
 }
+
 .acc-swiper-card-text-h {
   font-size: 28px;
   font-family: "Cormorant Garamond";
 }
+
 .acc-swiper-card-text-s {
   font-size: 18px;
   font-family: "Jost";
 }
-/* Ensure the pagination container is positioned relative to the Swiper container */
+
+/* Pagination */
 .swiper-pagination {
-  position: relative; /* Adjust as needed */
-}
-
-/* Styles for clickable pagination bullets */
-.swiper-pagination-clickable {
-
-}
-
-/* Position bullets outside of the Swiper container */
-.swiper-pagination-bullets {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  /* background-color: aliceblue; */
+  position: relative;
   padding: 20px;
   height: 20px;
 }
 
-/* Styles for horizontal pagination layout */
-.swiper-pagination-horizontal {
-  /* You can customize horizontal pagination if needed */
+.swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
 }
-/***********************Experience*********************************/
+
+/* Experience Section */
 .home-exp-cont {
   padding: 50px;
   background-color: white;
@@ -390,17 +396,15 @@ html{
 .exp-span {
   display: block;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Jost";
   letter-spacing: 4px;
-  font-weight: 500;
   color: rgba(185, 92, 71);
   margin-bottom: 10px;
 }
 
 .exp-h3-cont {
-  max-width: 1000px;
-  /* margin: 0 auto; */
+  width: 100%;
 }
 
 .exp-h3 {
@@ -413,42 +417,531 @@ html{
   font-family: "Jost";
   font-size: 18px;
   font-weight: 300;
-  padding-top: 0;
-  /* line-height: 27px; */
-  /* margin-bottom: 29.5px; */
+  line-height: 27px;
+  margin-bottom: 29.5px;
 }
 
 .exp-description-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 90px;
 }
-.exp-p-cont{
-  /* background-color: aqua; */
+
+.exp-gallery-cont {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 25px;
 }
-.exp-p-cont-a{
+
+.exp-gallery-cont-a {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   color: black;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-weight: 300;
 }
+
+.gallery-row-cont {
+  width: 70.5em;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.gallery-img-col {
+  flex: 1;
+}
+
+.gallery-img-cont {
+  position: relative;
+  width: 100%;
+}
+
+.gallery-img-cont img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gallery-img-cont:hover .img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-img-cont:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 .home-acco-cont a {
   margin-top: 10%;
-  color: aqua;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 30px;
   border: 1px solid black;
   border-radius: 3px;
-  padding-left: 30px;
-  padding-right: 30px;
   background-color: rgba(185, 92, 71);
 }
+
 .home-acco-cont a span {
   font-size: 15px;
   font-weight: 500;
   color: white;
+}
+
+/* For screens larger than 1440px */
+@media (min-width: 1440px) {
+  .home-body-cont .title {
+    font-size: 16px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 30px;
+  }
+}
+
+/* For screens between 1024px and 1440px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .home-body-cont .title {
+    font-size: 14px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .image-cont img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-body-cont .title {
+    font-size: 12px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .image-cont {
+    flex-direction: column;
+  }
+
+  .image-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .home-body-cont .title {
+    font-size: 10px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .image-cont {
+    flex-direction: column;
+  }
+
+  .image-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .home-body-cont .title {
+    font-size: 10px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .image-cont {
+    flex-direction: column;
+  }
+
+  .image-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 15px;
+  }
+}
+
+/* For screens smaller than 500px */
+@media (max-width: 499px) {
+  .home-body-cont .title {
+    font-size: 8px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .image-cont {
+    flex-direction: column;
+  }
+
+  .image-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens between 425px and 767px */
+@media (min-width: 425px) and (max-width: 647px) {
+  .home-body-cont .title {
+    font-size: 10px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .image-cont {
+    flex-direction: column;
+  }
+
+  .image-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 15px;
+  }
+  .numbers h3 {
+    font-size: 8px;
+  }
+  .num-events h3 {
+    font-size: 8px;
+  }
+}
+
+/* For screens smaller than 425px */
+@media (max-width: 424px) {
+  .home-body-cont .title {
+    font-size: 8px;
+  }
+
+  .home-about-cont .description {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .image-cont {
+    flex-direction: column;
+  }
+
+  .image-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-acco-cont .acco-description {
+    margin-bottom: 10px;
+  }
+}
+
+/* Home Spa Section */
+.home-spa-cont {
+  position: relative;
+  width: 100vw;
+  padding-top: 85px;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url("https://images.pexels.com/photos/24805054/pexels-photo-24805054/free-photo-of-view-of-the-terrace-with-a-swimming-pool-at-the-resort.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 80vh;
+}
+
+.spa-description {
+  text-align: center;
+}
+
+.spa-span {
+  font-family: "Jost", serif;
+  letter-spacing: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.spa-h3-cont {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.spa-h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Add some spacing */
+}
+
+.btn-cont {
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  font-family: "Jost";
+}
+
+.btn-cont span {
+  border: 1px solid;
+  padding: 10px 30px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Jost";
+  font-size: 15px;
+}
+
+.btn-cont span:hover {
+  background-color: rgba(185, 92, 71);
+}
+
+/* Responsive Font Sizes */
+
+/* For screens larger than 1440px */
+@media (min-width: 1440px) {
+  .spa-span {
+    font-size: 20px;
+  }
+
+  .spa-h3 {
+    font-size: 56px;
+  }
+
+  .num-events h3 {
+    font-size: 30px;
+  }
+
+  .num-events span {
+    font-size: 20px;
+  }
+}
+
+/* For screens between 1024px and 1440px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .spa-span {
+    font-size: 18px;
+  }
+
+  .spa-h3 {
+    font-size: 42px;
+  }
+
+  .num-events h3 {
+    font-size: 28px;
+  }
+
+  .num-events span {
+    font-size: 18px;
+  }
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .spa-span {
+    font-size: 16px;
+  }
+
+  .spa-h3 {
+    font-size: 36px;
+  }
+
+  .num-events h3 {
+    font-size: 24px;
+  }
+
+  .num-events span {
+    font-size: 16px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .spa-span {
+    font-size: 14px;
+  }
+
+  .spa-h3 {
+    font-size: 30px;
+  }
+
+  .num-events h3 {
+    font-size: 20px;
+  }
+
+  .num-events span {
+    font-size: 14px;
+  }
+}
+
+/* For screens between 425px and 647px */
+@media (min-width: 425px) and (max-width: 647px) {
+  .spa-span {
+    font-size: 12px;
+  }
+
+  .spa-h3 {
+    font-size: 24px;
+  }
+
+  .num-events h3 {
+    font-size: 18px;
+  }
+
+  .num-events span {
+    font-size: 12px;
+  }
+  .spa-description {
+    padding-bottom: 30px;
+  }
+  .home-acco-cont {
+    padding: 0px !important ;
+  }
+}
+@media (min-width: 375px) and (max-width: 647px) {
+  .spa-description {
+    padding-bottom: 30px;
+  }
+  .home-acco-cont {
+    padding: 0px !important;
+  }
+  .exp-gallery-cont{
+    padding-left: 0px;
+  }
+
+}
+
+/* For screens smaller than 425px */
+@media (max-width: 424px) {
+  .spa-span {
+    font-size: 10px;
+  }
+
+  .spa-h3 {
+    font-size: 20px;
+  }
+
+  .num-events h3 {
+    font-size: 16px;
+  }
+
+  .num-events span {
+    font-size: 10px;
+  }
+  .home-acco-cont {
+    padding: 0px;
+  }
+  .home-acco-cont {
+    padding: 0px !important;
+  }
+  .spa-description {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 429px){
+  .home-exp-cont{
+    padding: 0px !important;
+  }
+  .exp-description{
+    margin-top: 30px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0px !important;
+  }
+  .acco-description{
+    margin: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .exp-h3-cont{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px !important;
+  }
+  .exp-description p{
+    align-self: center;
+
+  }
+  p{
+    padding-left: 0px !important;
+  }
+  .exp-gallery-cont{
+    padding-left: 0px;
+  }
 }

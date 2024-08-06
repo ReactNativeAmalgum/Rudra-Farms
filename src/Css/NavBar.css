@@ -1,100 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
-.row {
-  display: flex;
+/* Base Styles */
+.navbar-cont {
   width: 100%;
-  font-family: "Jost", sans-serif;
+  padding: 20px 15px;
 }
 
-.column-wrap {
+.navbar {
+  background-color: red; /* Fixed color */
+}
+
+.navbar-brand {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content horizontally */
-}
-
-.main-row {
-  height: 130px;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background: transparent;
+  background-color: transparent;
 }
 
-.navbar-log-navlinks-cont {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-
-.navbar-routes-cont {
-  /* Uncomment or set a background color if needed */
-}
-
-.left-header-col-10 {
-  flex: 11;
-  /* background-color: blue; */
-}
-
-.right-header-col-2 {
-  flex: 1;
-  text-align: center;
+.navbar-expand-lg {
+  background-color: transparent;
 }
 
 .navbar-logo {
-  width: 100px;
-  align-self: center;
-  border-radius: 50%; /* Simplified */
-  margin-left: 70px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: red; /* Fixed color */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center align the navigation routes */
+  flex: 1; /* Allow navbar-nav to grow and take up space */
 }
 
 .navbar-routes {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  color: white;
-  justify-content: center;
-  margin-right: 10px;
-  padding: 10px;
-  font-family: "Jost", sans-serif; /* Consistent font-family */
-}
-
-.navbar-routes a {
-  text-decoration: none;
-  color: white;
-  padding: 14px 20px;
-}
-
-.navbar-routes li {
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  list-style-type: none;
-  border: 0; /* Removed redundant border properties */
+  gap: 20px;
+  padding: 10px 0;
+  background-color: transparent;
   font-family: "Jost", sans-serif;
-  font-weight: 400;
 }
 
-
-.right-header-col-4-cont {
-  margin-bottom: 15px;
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-color: red;
-  border-radius: 3px;
-  width: 150px; 
-  height: 40px;
-}
-
-.right-header-col-4-cont img {
-  width: 25px;
-}
-
-.right-header-col-4-cont h1 {
+.navbar-routes .nav-link {
+  color: white;
+  font-weight: 500;
   font-size: 18px;
-  color: white; /* Ensures text is visible on aqua background */
-  padding: 7px;
-  margin: 0px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar-routes .nav-link.active {
+  font-weight: 700;
+  
+}
+
+.navbar-routes .nav-item {
+  list-style-type: none;
+}
+
+/* @media(max-width:435px){
+  .navbar-logo{
+    display: none;
+  }
+} */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-logo {
+    width: 60px;
+  }
+
+  .navbar-routes {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+  .navbar-routes .nav-link {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar-logo {
+    width: 50px;
+  }
+
+  .navbar-routes {
+    gap: 10px;
+    padding: 6px 0;
+  }
+
+  .navbar-routes .nav-link {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-logo {
+    width: 45px;
+  }
+
+  .navbar-routes {
+    gap: 8px;
+    padding: 4px 0;
+  }
+
+  .navbar-routes .nav-link {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-logo {
+    width: 40px;
+  }
+
+  .navbar-routes {
+    gap: 6px;
+    padding: 2px 0;
+  }
+
+  .navbar-routes .nav-link {
+    padding: 6px 10px;
+  }
+}
+.navbar-is-active {
+  display: block !important;
+}
+.collapse:not(.show) {
+  display: none;
+  /* background-color: white; */
+  display: flex;
+  text-align: left;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 50%;
+  color: white;
+  /* height: 100vh; */
 }

@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
+import { Image } from "antd";
 import "../Css/Home.css";
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 2 seconds
+    }, 3000); // Change image every 2 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -31,7 +32,7 @@ export default function Home() {
   return (
     <>
       <section className="home-body-cont">
-        <NavBar />
+
         <div className="image-slider">
           {images.map((src, index) => (
             <img
@@ -44,6 +45,8 @@ export default function Home() {
             />
           ))}
         </div>
+        <NavBar />
+
         <div className="title">
           <span>STAY AMID NATURE</span>
           <h2>Welcome to Rudra Farms</h2>
@@ -112,11 +115,26 @@ export default function Home() {
       </section>
       <section className="home-spa-cont">
         <div className="spa-description">
-          <span className="spa-span">RELAX AND RUJUVENATE</span>
+          <span className="spa-span">
+            We have been in this business for two years and we started this
+            resort one year ago.
+          </span>
           <div className="spa-h3-cont">
-            <h3 className="spa-h3">
-              Spa and Massage at the Serene Rudra Farms Luxury Mountain Resort
-            </h3>
+            <h3 className="spa-h3"></h3>
+            <div className="home-num-cont numbers">
+              <div className="num-events">
+                <h3>10,000+</h3>
+                <span> CUSTOMERS</span>
+              </div>
+              <div className="num-events">
+                <h3>30+</h3>
+                <span> Events</span>
+              </div>
+              <div className="num-events">
+                <h3>80+</h3>
+                <span> CORPORATE CLIENTS</span>
+              </div>
+            </div>
             <div className="btn-cont">
               <span>FIND OUT MORE</span>
             </div>
@@ -141,14 +159,17 @@ export default function Home() {
             modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
             className="mySwiper"
             pagination={{ clickable: true }}
-            autoplay={{
-              delay: 1000, // Delay between slides in ms
-              disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-            }}
-            slidesPerView={3}
+            // autoplay={{
+            //   delay: 1000, // Delay between slides in ms
+            //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            // }}
             breakpoints={{
               1440: {
                 slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
             }}
@@ -251,29 +272,40 @@ export default function Home() {
             modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
             className="mySwiper"
             pagination={{ clickable: true }}
-            autoplay={{
-              delay: 1000, // Delay between slides in ms
-              disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-            }}
-            slidesPerView={3}
+            // autoplay={{
+            //   delay: 1000, // Delay between slides in ms
+            //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            // }}
             breakpoints={{
               1440: {
                 slidesPerView: 3,
-                spaceBetween: 100,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 1,
+                // spaceBetween:10
+              },
+              425: {
+                slidesPerView: 1,
+              },
+              375: {
+                slidesPerView: 1,
+              },
+              320: {
+                slidePrevView: 1,
               },
             }}
           >
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1478-HDRcmp-570x600.jpg" />
+                  <img src="https://th.bing.com/th/id/OIP.gwpwKbGX8ghYsw-EBkfF0wHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
-                    <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
-                    </span>
+                    <h3 className="acc-swiper-card-text-h">Caroom Board </h3>
                   </div>
                 </div>
               </div>
@@ -281,14 +313,9 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <img src="https://thumbs.dreamstime.com/b/ludo-board-game-group-friends-playing-155323062.jpg" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
-                    <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
-                    </span>
+                    <h3 className="acc-swiper-card-text-h">Ludo</h3>
                   </div>
                 </div>
               </div>
@@ -296,14 +323,9 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1394-HDRcmp-570x600.jpg" />
+                  <img src="https://th.bing.com/th/id/OIP.ERgE4tqWAOjG9sP4nuCGUQAAAA?w=157&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
-                    <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
-                    </span>
+                    <h3 className="acc-swiper-card-text-h">Chess</h3>
                   </div>
                 </div>
               </div>
@@ -311,14 +333,9 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1524-HDRcmp-570x600.jpg" />
+                  <img src="https://th.bing.com/th/id/OIP.itRZRraXbDYsqS36LqL7gwHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
-                    <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
-                    </span>
+                    <h3 className="acc-swiper-card-text-h">UNO</h3>
                   </div>
                 </div>
               </div>
@@ -326,14 +343,19 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <img src="https://th.bing.com/th/id/OIP.YQOgOWbjO2YdODIu82PU0gHaFW?w=253&h=182&c=7&r=0&o=5&dpr=1.1&pid=1.7" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
-                    <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
-                    </span>
+                    <h3 className="acc-swiper-card-text-h">Dart Board</h3>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.thefitness.blog/wp-content/uploads/2020/12/The-Best-Indoor-and-Outdoor-Table-Tennis-Ping-Pong-Tables-2020.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Table Tennis</h3>
                   </div>
                 </div>
               </div>
@@ -341,21 +363,64 @@ export default function Home() {
           </Swiper>
         </div>
         <div className="exp-description-2">
-          <span className="exp-span">
-            READ MORE ABOUT OUR RESORT THROUGH OUR BLOGS
-          </span>
+          <span className="exp-span">OUR RESORT GALLERY</span>
           <div className="exp-h3-cont">
-            <h3 className="exp-h3">
-              Experience the Pinnacle of Relaxation and Escape to Malhar Machi
-              Luxury Mountain Resort
-            </h3>
-            <div className="exp-p-cont">
-              <a className="exp-p-cont-a">
-              Luxury Resort in Pune
-              </a>
-              <a>Resort near Mulshi lake Pune</a>
-              <a>Resort near Pune for Weekende</a>
-              <a>Resort near Pune for Weekend</a>
+            <p>
+              Welcome to our resort gallery! Browse our gallery and let us
+              inspire you to book your next unforgettable getaway.
+            </p>
+            <div className="exp-gallery-cont">
+              <div className="exp-gallery-inner-cont container">
+                {/* <div> */}
+                <div className="gallery-row-cont row">
+                  <div className="gallery-img-col col">
+                    <div className="gallery-img-cont">
+                      <Image src="https://visavawaterpark.in/images/galleryImages/visavaGallery/visavaGaller38.jpg" />
+
+                      {/* <div className="img-overlay"></div> */}
+                    </div>
+                  </div>
+                  <div className="gallery-img-col col">
+                    <div className="gallery-img-cont">
+                      <Image src="https://visavawaterpark.in/images/galleryImages/visavaGallery/visavaGaller38.jpg" />
+                      {/* <div className="img-overlay"></div> */}
+                    </div>{" "}
+                  </div>
+                  <div className="gallery-img-col col">
+                    <div className="gallery-img-cont">
+                      <Image src="https://visavawaterpark.in/images/galleryImages/visavaGallery/visavaGaller38.jpg" />
+                      {/* <div className="img-overlay"></div> */}
+                    </div>{" "}
+                  </div>
+                </div>
+
+                {/* </div> */}
+              </div>
+              <div className="exp-gallery-inner-cont container">
+                {/* <div> */}
+                <div className="gallery-row-cont row">
+                  <div className="gallery-img-col col">
+                    <div className="gallery-img-cont">
+                      <Image src="https://visavawaterpark.in/images/galleryImages/visavaGallery/visavaGaller38.jpg" />
+                      {/* <div className="img-overlay"></div> */}
+                    </div>
+                  </div>
+                  <div className="gallery-img-col col">
+                    <div className="gallery-img-cont">
+                      <Image src="https://visavawaterpark.in/images/galleryImages/visavaGallery/visavaGaller38.jpg" />
+                      {/* <div className="img-overlay"></div> */}
+                    </div>{" "}
+                  </div>
+                  <div className="gallery-img-col col">
+                    <div className="gallery-img-cont">
+                      <Image src="https://visavawaterpark.in/images/galleryImages/visavaGallery/visavaGaller38.jpg" />
+                      {/* <div className="img-overlay"></div> */}
+                    </div>{" "}
+                  </div>
+                </div>
+
+                {/* </div> */}
+              </div>
             </div>
           </div>
         </div>

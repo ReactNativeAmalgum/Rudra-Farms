@@ -28,8 +28,7 @@ export default function Footer() {
             <div className="footer-col-6">
               <h3>Abouts</h3>
               <p>
-                Discove the ultimate gateway at Rudra Farms Mountain Resort,
-                nestled in the lush Sahyadri range near Pune.
+              We have been in this business for two years and we started this resort one year ago.
               </p>
             </div>
             <div className="col-2">
@@ -53,7 +52,9 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-2">
-              <h3>Contact Us</h3>
+             <div className="speacial-h3">
+             <h3>Contact Us</h3>
+             </div>
               <div className="social">
                 <CgMail className="icon" /> <p>rudra@gmail.com</p>
               </div>
