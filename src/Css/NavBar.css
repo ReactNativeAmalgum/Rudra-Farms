@@ -46,7 +46,7 @@
 }
 
 .navbar-routes .nav-link {
-  /* color: white; */
+  color: white;
   font-weight: 500;
   font-size: 18px;
   padding: 14px 20px;
@@ -55,7 +55,11 @@
 
 .navbar-routes .nav-link.active {
   font-weight: 700;
-  
+  color: white;
+}
+
+.navbar-nav .show>.nav-link, .navbar-nav .nav-link.active{
+  color: white;
 }
 
 .navbar-routes .nav-item {
