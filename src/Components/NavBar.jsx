@@ -5,11 +5,11 @@ import "../Css/NavBar.css";
 import menu from "../Assets/menu.png";
 
 export default function NavBar() {
-  const[navToggle,setNavbarToggle] = useState(false)
+  const [navToggle, setNavbarToggle] = useState(false);
 
-  const changeHandle = ()=>{
-    setNavbarToggle(!navToggle)
-  }
+  const changeHandle = () => {
+    setNavbarToggle(!navToggle);
+  };
   return (
     <nav className="navbar-cont navbar navbar-expand-lg">
       <button
@@ -22,11 +22,20 @@ export default function NavBar() {
         aria-label="Toggle navigation"
         onClick={changeHandle}
       >
-    <span class="navbar-toggler-icon"></span>
-    </button>
-      <img src={logo} alt={'logo'}  style={{width:80,borderRadius:'50%', height:80,marginLeft:10}}/>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img
+        src={logo}
+        alt={"logo"}
+        style={{ width: 80, borderRadius: "50%", height: 80, marginLeft: 10 }}
+      />
 
-      <div class={ `collapse navbar-collapse ${navToggle === true? "navbar-is-active" :""}`} id="navbarSupportedContent">
+      <div
+        class={`collapse navbar-collapse ${
+          navToggle === true ? "navbar-is-active" : ""
+        }`}
+        id="navbarSupportedContent"
+      >
         <ul className="navbar-nav mr-auto navbar-routes">
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>

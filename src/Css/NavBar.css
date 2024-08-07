@@ -7,7 +7,6 @@
 }
 
 .navbar {
-  background-color: red; /* Fixed color */
 }
 
 .navbar-brand {
@@ -41,12 +40,12 @@
   display: flex;
   gap: 0px !important;
   padding: 10px 0;
-  background-color: white;
+  /* background-color: white; */
   font-family: "Jost", sans-serif;
 }
 
 .navbar-routes .nav-link {
-  /* color: white; */
+  color: white;
   font-weight: 500;
   font-size: 18px;
   padding: 14px 20px;
@@ -55,7 +54,12 @@
 
 .navbar-routes .nav-link.active {
   font-weight: 700;
-  
+  color: white;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: white !important;
 }
 
 .navbar-routes .nav-item {
@@ -75,12 +79,28 @@
   }
 
   .navbar-routes {
-    gap: 15px;
-    padding: 8px 0;
+    gap: 0.5px !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 0;
+    position: absolute;
   }
 
   .navbar-routes .nav-link {
     padding: 12px 16px;
+  }
+  .navbar-routes .nav-link {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar-routes .nav-link.active {
+    font-weight: 700;
+    color: black !important;
+  }
+  .navbar-nav{
+    /* background-color: blue; */
   }
 }
 

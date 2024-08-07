@@ -10,7 +10,6 @@
 }
 
 .rooom-body-cont::before {
-
   content: "";
   position: absolute;
   top: 0;
@@ -23,10 +22,9 @@
   background-position: center;
   filter: brightness(60%) blur(0px); /* Apply shadow effect */
   /* z-index: 1; */
-
 }
 
-.rooom-title{
+.rooom-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,6 +55,7 @@
   font-weight: 600;
   font-size: 56px;
   margin-top: 40px;
+  /* margin-bottom: ; */
   overflow-wrap: break-word;
   z-index: 1000; /* Ensure text is above pseudo-element */
 }
@@ -189,13 +188,16 @@ p {
   padding-left: 50px;
 }
 
-.only-img-cont{
+.only-img-cont {
   width: 510px !important;
-  height:510px !important;
+  height: 510px !important;
 }
-.only-img-cont img{
+.only-img-cont img {
   width: 100%;
   height: 100%;
+}
+.alt-section {
+  margin-bottom: 10px;
 }
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -239,16 +241,18 @@ p {
     height: 100% !important;
     width: 100% !important;
   } */
-  .only-img-cont{
+  .only-img-cont {
     width: 510px !important;
-    height:510px !important;
+    height: 510px !important;
   }
-  .only-img-cont img{
+  .only-img-cont img {
     width: 100%;
     height: 100%;
   }
+  .alt-right-col-cont{
+    padding-left: 0px;
+  }
 }
-
 
 @media (max-width: 768px) {
   .rooom-body-cont {
@@ -286,28 +290,31 @@ p {
   }
 
   .alt-right-col-cont {
-    padding-left: 30px;
+    padding-left: 0px;
   }
   .rooom-row-cont {
     display: flex;
     flex-direction: row;
     padding-bottom: 30px;
+    padding-right: 20px;
   }
   .rooom-column-txt {
     display: flex;
     flex-direction: column;
   }
-  .only-img-cont{
+  .only-img-cont {
     height: 360px !important;
-  } 
-  .only-img-cont img{
+  }
+  .only-img-cont img {
     width: 100% !important;
     height: 100% !important;
   }
+  .alt-section {
+    margin-bottom: 50px;
+  }
 }
- 
-@media (max-width: 426px) {
 
+@media (max-width: 426px) {
   .rooom-body-cont-title {
     font-size: 28px;
   }
@@ -334,30 +341,30 @@ p {
   }
 
   .alt-right-col-cont {
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
 
   .rooom-row-cont {
     display: flex !important;
     flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 30px !important;
   }
-  .section1-swipper-cont{
-    /* background-color: aqua; */
+  .section1-swipper-cont {
     width: 350px !important;
-    margin-left: 15px !important;
     display: flex !important;
     padding-bottom: 30px;
     justify-content: center !important;
   }
-  .only-img-cont img{
+  .only-img-cont img {
     width: 100% !important;
     height: 100% !important;
   }
-  .rooom-column-txt{
+  .rooom-column-txt {
     width: 100% !important;
   }
-  .alt{
+  .alt {
     display: flex !important;
     flex-direction: column !important;
     /* padding-bottom: 30px !important; */
@@ -366,26 +373,24 @@ p {
     justify-content: end;
     padding-left: 0px !important;
   }
-  .rooom-row-cont-alt{
+  .rooom-row-cont-alt {
     width: 100% !important;
     padding-right: 35px !important;
     padding-left: 35px !important;
     /* background-color: aqua !important; */
-
   }
   .only-img-cont-alt {
     /* width: 100% !important; */
     height: 360px !important;
-
   }
-  .only-img-cont-alt img{
+  .only-img-cont-alt img {
     width: 100% !important;
     height: 100% !important;
   }
-  .rooom-details-cont{
+  .rooom-details-cont {
     padding: 0px !important;
   }
-  .room-bar{
+  .room-bar {
     width: 90%;
     align-items: center;
     align-self: center;
@@ -393,11 +398,150 @@ p {
     margin-left: 20px !important;
     border: 1px solid #ddd;
   }
-  .alt-section{
+  .alt-section {
     padding-top: 0px !important;
     margin-top: 0px !important;
   }
-  .rooom-title h1{
+  .rooom-title h1 {
     font-size: 42px;
+  }
+  .special-margin {
+    padding-top: 30px;
+  }
+  .alt-section {
+    margin-bottom: 10px;
+  }
+  .rooom-row-cont {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 0px !important;
+    /* padding-right: 10px !important; */
+    /* padding-left: 10px !important; */
+    margin: 0px !important;
+  }
+  .section1-swipper-cont {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .rooom-body-cont {
+    height: 55vh; /* Adjust the height to better fit smaller screens */
+  }
+
+  .rooom-body-cont-title {
+    font-size: 24px; /* Decrease font size for very small screens */
+  }
+
+  .section1-rooom-body-cont {
+    padding-top: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .rooom-row-cont a {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .rooom-row-cont p {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .rooom-column-txt .rooom-details,
+  .rooom-column-txt-alt .rooom-details {
+    font-size: 10px; /* Smaller font size for details */
+  }
+
+  .bed-rooom-cont {
+    font-size: 10px; /* Smaller font size for bed room section */
+  }
+
+  .alt-right-col-cont {
+    padding-left: 5px;
+  }
+
+  .rooom-row-cont {
+    flex-direction: column; /* Stack items vertically */
+    padding-bottom: 20px; /* Adjust padding */
+  }
+
+  .only-img-cont {
+    height: 300px !important; /* Adjust image height for small screens */
+  }
+
+  .only-img-cont img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .section1-swipper-cont {
+    width: 300px !important; /* Adjust swiper width */
+    margin-left: 10px !important;
+    display: flex !important;
+    padding-bottom: 20px; /* Adjust padding */
+    justify-content: center !important;
+  }
+
+  .rooom-column-txt {
+    width: 100% !important; /* Ensure full width */
+  }
+
+  .alt {
+    width: 100% !important; /* Ensure full width */
+    padding-left: 0px !important; /* Remove extra padding */
+    justify-content: flex-start; /* Adjust alignment */
+  }
+
+  .rooom-row-cont-alt {
+    width: 100% !important; /* Ensure full width */
+    padding: 0 10px !important; /* Adjust padding */
+  }
+
+  .only-img-cont-alt {
+    height: 300px !important; /* Adjust image height */
+  }
+
+  .only-img-cont-alt img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .rooom-details-cont {
+    padding: 0px !important; /* Remove padding */
+  }
+
+  .room-bar {
+    width: 90%;
+    margin-left: 10px !important; /* Adjust margin */
+    border: 1px solid #ddd;
+  }
+
+  .alt-section {
+    padding-top: 10px !important; /* Adjust padding */
+    margin-top: 0px !important;
+    margin-bottom: 5px; /* Adjust margin */
+  }
+
+  .rooom-title h1 {
+    font-size: 32px; /* Adjust font size for title */
+  }
+
+  .special-margin {
+    padding-top: 20px; /* Adjust padding */
+  }
+  .rooom-row-cont {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 0px !important;
+    padding-right: 10px !important;
+    padding-left:0px !important;
+    margin: 0px !important;
+  }
+  .section1-swipper-cont {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
   }
 }
