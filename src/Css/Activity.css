@@ -287,12 +287,12 @@ p {
 
 
 @media (max-width: 768px) {
-  .exp-body-cont, .section1-exp-body-cont, .section2-exp-body-cont {
+  /* .exp-body-cont, .section2-exp-body-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-  }
+  } */
 
   .room-row-cont, .room-column-txt, .room-column-txt-alt {
     flex-direction: column;
