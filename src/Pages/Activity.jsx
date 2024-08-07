@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-import "../Css/Experience.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,6 +9,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
+import "../Css/Activity.css";
 
 export default function Activity() {
   return (
@@ -35,8 +35,8 @@ export default function Activity() {
       </section>
       <section className="section1-exp-body-cont">
         <div className="container text-center">
-          <div className="  room-row-cont row">
-            <div className="onlyImg room-row-cont col-6">
+          <div className="room-row-cont row">
+            <div className="onlyImg-room-row-cont col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation, Autoplay]}
@@ -77,12 +77,12 @@ export default function Activity() {
           </div>
         </div>
       </section>
-      <section className="section1-exp-body-cont">
+      <section className="section2-exp-body-cont">
         <div className="container text-center">
-          <div className="room-row-cont row">
+          <div className="section2-room-row-cont row">
             <div
               style={{ paddingLeft: 80 }}
-              className="  room-column-txt-alt room-row-cont col-6"
+              className="room-column-txt-alt room-row-cont col-6"
             >
               <a>Outdoor Activites</a>
 
@@ -93,7 +93,7 @@ export default function Activity() {
                 mattis ultrices sem iaculis eleifend adipiscing libero semper.
               </p>
             </div>
-            <div className="onlyImg room-row-cont col-6">
+            <div className="onlyImg-room-row-cont  col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation, Autoplay]}
@@ -105,18 +105,18 @@ export default function Activity() {
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
-                      <img
-                        src="https://plus.unsplash.com/premium_photo-1685303469211-7fa57a7dd43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGdhbWVzfGVufDB8fDB8fHww"
-                        alt="Activity 1"
-                      />
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1685303469211-7fa57a7dd43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGdhbWVzfGVufDB8fDB8fHww"
+                      alt="Activity 1"
+                    />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
-                      <img
-                        src="https://plus.unsplash.com/premium_photo-1708558513102-c9c9f7d0b970?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3V0ZG9vciUyMGdhbWVzJTIwaW4lMjByZXNvcnR8ZW58MHx8MHx8fDA%3D"
-                        alt="Activity 2"
-                      />
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1708558513102-c9c9f7d0b970?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3V0ZG9vciUyMGdhbWVzJTIwaW4lMjByZXNvcnR8ZW58MHx8MHx8fDA%3D"
+                      alt="Activity 2"
+                    />
                   </div>
                 </SwiperSlide>
               </Swiper>

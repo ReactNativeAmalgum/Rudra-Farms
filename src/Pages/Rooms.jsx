@@ -30,17 +30,21 @@ export default function Room() {
       <section className="section1-rooom-body-cont">
         <div className="container text-center">
           <div className="rooom-row-cont row">
-            <div className="onlyImg col-6">
+            <div className="section1-swipper-cont col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  <div className="only-img-cont">
+                    <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  <div className="only-img-cont">
+                    <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  </div>
                 </SwiperSlide>
               </Swiper>{" "}
             </div>
@@ -68,10 +72,11 @@ export default function Room() {
           </div>
         </div>
       </section>
-      <section className="section1-rooom-body-cont">
+      <div className="room-bar" />
+      <section className="section1-rooom-body-cont alt-section">
         <div className="container text-center">
-          <div className="rooom-row-cont row">
-            <div className="col-6  rooom-column-txt rooom-row-cont">
+          <div className="rooom-row-cont alt  row">
+            <div className="col-6  rooom-column-txt">
               <div className="alt-right-col-cont">
                 <a>Nabhananta Garden View</a>
                 <div className="inner-bed-rooom-cont">
@@ -87,22 +92,26 @@ export default function Room() {
                   indoor-outdoor experience. Large windows bathe the space in
                   natural light and showcase the breathtaking panorama.
                 </p>
-                <div>
+                <div className="rooom-details-cont">
                   <a className="rooom-details">Room details</a>
                 </div>
               </div>
             </div>
-            <div className="onlyImg rooom-row-cont col-6">
+            <div className="rooom-row-cont-alt col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  <div className="only-img-cont-alt">
+                    <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  </div>{" "}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  <div className="only-img-cont-alt">
+                    <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
+                  </div>{" "}
                 </SwiperSlide>
               </Swiper>{" "}
             </div>

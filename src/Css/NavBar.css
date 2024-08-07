@@ -39,14 +39,14 @@
 
 .navbar-routes {
   display: flex;
-  gap: 20px;
+  gap: 0px !important;
   padding: 10px 0;
-  background-color: transparent;
+  background-color: white;
   font-family: "Jost", sans-serif;
 }
 
 .navbar-routes .nav-link {
-  color: white;
+  /* color: white; */
   font-weight: 500;
   font-size: 18px;
   padding: 14px 20px;
