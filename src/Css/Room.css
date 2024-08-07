@@ -56,6 +56,7 @@
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-size: 56px;
+  margin-top: 40px;
   overflow-wrap: break-word;
   z-index: 1000; /* Ensure text is above pseudo-element */
 }
@@ -188,6 +189,14 @@ p {
   padding-left: 50px;
 }
 
+.only-img-cont{
+  width: 510px !important;
+  height:510px !important;
+}
+.only-img-cont img{
+  width: 100%;
+  height: 100%;
+}
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .rooom-body-cont-title {
@@ -222,57 +231,24 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .onlyImg {
+  /* .onlyImg {
     width: 400px !important;
     height: 380px !important;
-  }
-  .onlyImg img {
+  } */
+  /* .onlyImg img {
     height: 100% !important;
+    width: 100% !important;
+  } */
+  .only-img-cont{
+    width: 510px !important;
+    height:510px !important;
+  }
+  .only-img-cont img{
+    width: 100%;
+    height: 100%;
   }
 }
 
-@media (max-width: 647px) {
-  .rooom-body-cont {
-    height: 60vh;
-  }
-
-  .rooom-body-cont-title {
-    font-size: 32px;
-  }
-
-  .section1-rooom-body-cont {
-    height: auto;
-  }
-
-  .rooom-row-cont a {
-    font-size: 24px;
-  }
-
-  .rooom-row-cont p {
-    font-size: 14px;
-  }
-
-  .rooom-column-txt .rooom-details {
-    font-size: 12px;
-  }
-
-  .rooom-column-txt-alt .rooom-details {
-    font-size: 12px;
-  }
-
-  .onlyImg {
-    width: 300px;
-    height: 300px;
-  }
-
-  .bed-rooom-cont {
-    font-size: 14px;
-  }
-
-  .alt-right-col-cont {
-    padding-left: 20px;
-  }
-}
 
 @media (max-width: 768px) {
   .rooom-body-cont {
@@ -304,15 +280,6 @@ p {
     font-size: 13px;
   }
   .col-6 img {
-    /* width: 0px!important; */
-  }
-  .onlyImg {
-    width: 250px !important;
-    height: 250px !important;
-  }
-  .onlyImg {
-    width: 50% !important;
-    height: 100% !important;
   }
   .bed-rooom-cont {
     font-size: 15px;
@@ -330,13 +297,16 @@ p {
     display: flex;
     flex-direction: column;
   }
-}
-
-@media (max-width: 425px) {
-  .rooom-body-cont {
-    height: 50vh;
-    padding: 20px;
+  .only-img-cont{
+    height: 360px !important;
+  } 
+  .only-img-cont img{
+    width: 100% !important;
+    height: 100% !important;
   }
+}
+ 
+@media (max-width: 426px) {
 
   .rooom-body-cont-title {
     font-size: 28px;
@@ -354,17 +324,9 @@ p {
     font-size: 13px;
   }
 
-  .rooom-column-txt .rooom-details {
-    font-size: 11px;
-  }
-
+  .rooom-column-txt .rooom-details,
   .rooom-column-txt-alt .rooom-details {
     font-size: 11px;
-  }
-
-  .onlyImg {
-    width: 250px;
-    height: 250px;
   }
 
   .bed-rooom-cont {
@@ -373,5 +335,69 @@ p {
 
   .alt-right-col-cont {
     padding-left: 10px;
+  }
+
+  .rooom-row-cont {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-bottom: 30px !important;
+  }
+  .section1-swipper-cont{
+    /* background-color: aqua; */
+    width: 350px !important;
+    margin-left: 15px !important;
+    display: flex !important;
+    padding-bottom: 30px;
+    justify-content: center !important;
+  }
+  .only-img-cont img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .rooom-column-txt{
+    width: 100% !important;
+  }
+  .alt{
+    display: flex !important;
+    flex-direction: column !important;
+    /* padding-bottom: 30px !important; */
+    width: 100% !important;
+    /* background-color: aquamarine; */
+    justify-content: end;
+    padding-left: 0px !important;
+  }
+  .rooom-row-cont-alt{
+    width: 100% !important;
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+    /* background-color: aqua !important; */
+
+  }
+  .only-img-cont-alt {
+    /* width: 100% !important; */
+    height: 360px !important;
+
+  }
+  .only-img-cont-alt img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .rooom-details-cont{
+    padding: 0px !important;
+  }
+  .room-bar{
+    width: 90%;
+    align-items: center;
+    align-self: center;
+    /* margin-right: 30px !important; */
+    margin-left: 20px !important;
+    border: 1px solid #ddd;
+  }
+  .alt-section{
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+  }
+  .rooom-title h1{
+    font-size: 42px;
   }
 }

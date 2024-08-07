@@ -49,7 +49,7 @@ export default function NavBar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/experience">
+            <NavLink className="nav-link" to="/activity">
               Activity
             </NavLink>
           </li>

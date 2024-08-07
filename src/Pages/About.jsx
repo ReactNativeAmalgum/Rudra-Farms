@@ -70,7 +70,7 @@ export default function About() {
                 Donate bitcoin:
               </p>
             </div>
-            <div className="col-6">
+            <div className="col-cont col-6">
               <div className="section2-img-cont">
                 <img
                   // className="about-img"
