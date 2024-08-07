@@ -59,7 +59,7 @@
 }
 
 .navbar-nav .show>.nav-link, .navbar-nav .nav-link.active{
-  color: white;
+  color: white !important;
 }
 
 .navbar-routes .nav-item {
