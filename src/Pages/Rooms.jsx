@@ -73,9 +73,9 @@ export default function Room() {
         </div>
       </section>
       <div className="room-bar" />
-      <section className="section1-rooom-body-cont alt-section">
+      <section className="alt-section">
         <div className="container text-center">
-          <div className="rooom-row-cont alt  row">
+          <div className="rooom-row-cont  row">
             <div className="col-6  rooom-column-txt">
               <div className="alt-right-col-cont">
                 <a>Nabhananta Garden View</a>
@@ -97,21 +97,21 @@ export default function Room() {
                 </div>
               </div>
             </div>
-            <div className="rooom-row-cont-alt col-6">
+            <div className=" special-margin section1-swipper-cont col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <div className="only-img-cont-alt">
+                  <div className="only-img-cont">
                     <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
-                  </div>{" "}
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="only-img-cont-alt">
+                  <div className="only-img-cont">
                     <img src="https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07" />
-                  </div>{" "}
+                  </div>
                 </SwiperSlide>
               </Swiper>{" "}
             </div>
