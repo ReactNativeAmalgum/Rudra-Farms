@@ -7,7 +7,6 @@
 }
 
 .navbar {
-  background-color: red; /* Fixed color */
 }
 
 .navbar-brand {
@@ -58,7 +57,8 @@
   color: white;
 }
 
-.navbar-nav .show>.nav-link, .navbar-nav .nav-link.active{
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
   color: white !important;
 }
 
@@ -79,13 +79,28 @@
   }
 
   .navbar-routes {
-    gap: 15px;
-    background-color: aliceblue;
-    padding: 8px 0;
+    gap: 0.5px !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 0;
+    position: absolute;
   }
 
   .navbar-routes .nav-link {
     padding: 12px 16px;
+  }
+  .navbar-routes .nav-link {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar-routes .nav-link.active {
+    font-weight: 700;
+    color: black !important;
+  }
+  .navbar-nav{
+    /* background-color: blue; */
   }
 }
 
