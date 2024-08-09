@@ -40,10 +40,10 @@ export default function Activity() {
               <Swiper
                 navigation={true}
                 modules={[Navigation, Autoplay]}
-                // autoplay={{
-                //   delay: 3000, // Delay between slides in ms
-                //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-                // }}
+                autoplay={{
+                  delay: 3000, // Delay between slides in ms
+                  disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+                }}
                 className="mySwiper"
               >
                 <SwiperSlide>
@@ -82,7 +82,7 @@ export default function Activity() {
           <div className="section2-room-row-cont row">
             <div
               style={{ paddingLeft: 80 }}
-              className="room-column-txt-alt room-row-cont col-6"
+              className=" room-column-txt-alt order-2 order-md-1 room-row-cont col-6"
             >
               <a>Outdoor Activites</a>
 
@@ -93,15 +93,15 @@ export default function Activity() {
                 mattis ultrices sem iaculis eleifend adipiscing libero semper.
               </p>
             </div>
-            <div className="onlyImg-room-row-cont  col-6">
+            <div className=" order-1 order-md-2 onlyImg-room-row-cont  col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation, Autoplay]}
                 className="mySwiper"
-                // autoplay={{
-                //   delay: 3050, // Delay between slides in ms
-                //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-                // }}
+                autoplay={{
+                  delay: 3050, // Delay between slides in ms
+                  disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+                }}
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">

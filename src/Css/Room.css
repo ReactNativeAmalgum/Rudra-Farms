@@ -39,6 +39,7 @@
   font-weight: 600;
   font-size: 56px;
   overflow-wrap: break-word;
+  
   z-index: 1000; /* Ensure text is above pseudo-element */
 }
 .rooom-body-cont-title {
@@ -55,7 +56,6 @@
   font-weight: 600;
   font-size: 56px;
   margin-top: 40px;
-  /* margin-bottom: ; */
   overflow-wrap: break-word;
   z-index: 1000; /* Ensure text is above pseudo-element */
 }
@@ -189,8 +189,8 @@ p {
 }
 
 .only-img-cont {
-  width: 510px !important;
-  height: 510px !important;
+  /* width: 510px !important; */
+  /* height: 380px !important; */
 }
 .only-img-cont img {
   width: 100%;
@@ -199,6 +199,39 @@ p {
 .alt-section {
   margin-bottom: 10px;
 }
+
+.next-cont{
+  display: block;
+  padding: 50px;
+  flex-direction: row;
+}
+.next-cont a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5a5a5a; /* Default color */
+  text-decoration: none; /* Optional: remove underline */
+  transition: color 0.3s ease; /* Optional: smooth color transition */
+}
+
+.next-cont a:active {
+  color: #b95c47; /* Color when link is being clicked */
+}
+
+/* Optional: To handle the visited state, if needed */
+.next-cont a:visited {
+  /* color: #5a5a5a; Color when link has been visited */
+  color: #b95c47; /* Color when link is being clicked */
+
+}
+.next{
+  /* background-color: aqua; */
+  text-align: center;
+}
+
+.section1-swipper-cont{
+  padding:10px
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .rooom-body-cont-title {
@@ -243,7 +276,7 @@ p {
   } */
   .only-img-cont {
     width: 510px !important;
-    height: 510px !important;
+    height: 380px !important;
   }
   .only-img-cont img {
     width: 100%;
@@ -318,7 +351,7 @@ p {
   .rooom-body-cont-title {
     font-size: 28px;
   }
-
+  
   .section1-rooom-body-cont {
     padding-top: 20px;
   }
