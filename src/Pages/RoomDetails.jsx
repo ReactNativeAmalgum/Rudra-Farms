@@ -46,9 +46,8 @@ export default function RoomDetails() {
 
   return (
     <>
-      <section className="rd-section1-body-cont">
-        <NavBar />
-      </section>
+            <NavBar />
+
       {/*Gallery */}
       <section className="my-section py-4">
         <div className="container">

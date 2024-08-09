@@ -5,14 +5,12 @@ html {
 .rd-section1-body-cont {
   position: relative;
   width: 100vw;
-  height: 20vh;
+  height: 20vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: black;
-  /* padding-left: 50px; */
-  /* padding-right: 50px; */
+  background-color: rgb(134, 126, 126);
 }
 
 /* Facility rule form cont */
@@ -520,6 +518,8 @@ html {
   background-color: #0056b3;
 }
 
+
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .rd-form-first-last-cont {
@@ -684,7 +684,7 @@ html {
 @media (max-width: 768px) {
   .room-column-txt {
     width: 100% !important;
-    align-items: left !important;
+    align-items: baseline !important;
     text-align: left !important;
   }
   .room-row-cont,
