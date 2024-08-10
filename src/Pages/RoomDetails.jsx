@@ -46,8 +46,9 @@ export default function RoomDetails() {
 
   return (
     <>
-            <NavBar />
-
+      <section className="rd-navbar">
+        <NavBar />
+      </section>
       {/*Gallery */}
       <section className="my-section py-4">
         <div className="container">
@@ -263,14 +264,11 @@ export default function RoomDetails() {
                         value={msg}
                         onChange={(e) => setMsg(e.target.value)}
                       />
-                    </div>
-                    <div className="rd-send-btn-cont">
-                      <touchableHilight
-                        className="rd-form-send"
-                        onClick={sendBtn}
-                      >
-                        <span>Send</span>
-                      </touchableHilight>
+                      <div className="submit-cont">
+                        <button className="rd-send-btn-cont">
+                          <span>Submit</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -280,38 +278,40 @@ export default function RoomDetails() {
         </section>
       </section>
       <section className="myy-section">
-      <div className="other-custom-row row">
-      <h3 className="heading-title">Other Room</h3>
-        <div className="col-md-6">
-          <img
-            src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-            alt="Modern Luxury Bedroom"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-md-6 rd-column-txt rd-row-cont">
-          <a href="#">Nabhananta Garden View</a>
-          <div className="other-rd-gap">
-            <div className="other-rd-gap inner-bed-rd-cont">
-              <div className="bed-rd-cont">
-                <IoBedOutline /> 2 beds
+        <div className="other-custom-row row">
+          <h3 className="heading-title">Other Room</h3>
+          <div className="col-md-6">
+            <img
+              src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
+              alt="Modern Luxury Bedroom"
+              className="img-fluid"
+            />
+          </div>
+          <div className="col-md-6 rd-column-txt rd-row-cont">
+            <a href="#">Nabhananta Garden View</a>
+            <div className="other-rd-gap">
+              <div className="other-rd-gap inner-bed-rd-cont">
+                <div className="bed-rd-cont">
+                  <IoBedOutline /> 2 beds
+                </div>
+                <div className="bed-rd-cont">
+                  <MdBathroom /> 2 bathrooms
+                </div>
               </div>
-              <div className="bed-rd-cont">
-                <MdBathroom /> 2 bathrooms
-              </div>
+              <p className="rd-descp1">
+                Unwind in our luxurious garden suite, designed for a seamless
+                indoor-outdoor experience. Large windows bathe the space in
+                natural light and showcase the breathtaking panorama.
+              </p>
             </div>
-            <p className="rd-descp1">
-              Unwind in our luxurious garden suite, designed for a seamless indoor-outdoor experience. Large windows bathe the space in natural light and showcase the breathtaking panorama.
-            </p>
-          </div>
-          <div>
-            <a className="rd-details" href="/rooms/room-details">
-              Room details
-            </a>
+            <div>
+              <a className="rd-details" href="/rooms/room-details">
+                Room details
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <Footer />
     </>

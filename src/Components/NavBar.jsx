@@ -36,7 +36,7 @@ export default function NavBar() {
         }`}
         id="navbarSupportedContent"
       >
-        <ul className="navbar-nav mr-auto navbar-routes">
+        <ul className="navbar-nav navbar-routes">
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>
               Home <span className="sr-only">(current)</span>
@@ -44,7 +44,7 @@ export default function NavBar() {
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/about">
-              about
+              About
             </NavLink>
           </li>
           <li className="nav-item">

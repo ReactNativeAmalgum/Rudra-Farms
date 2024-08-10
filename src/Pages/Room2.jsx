@@ -41,90 +41,111 @@ export default function Room2() {
       alert("Please fill the details");
     }
   };
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log("Form submitted:", formData);
+  };
+
   return (
     <>
-  <section className="my-section py-4">
-      <div className="container">
-        <div className="row-custom">
-          <div className="col-custom">
+      <section className="my-section py-4">
+        <div className="container">
+          <div className="row-custom">
+            <div className="col-custom">
+              <img
+                src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
+                alt="Modern Luxury Bedroom"
+                className="cover-image"
+              />
+            </div>
+            <div className="col-custom">
+              <div className="card-group-container">
+                <div className="card-group">
+                  <div className="card">
+                    <img
+                      src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
+                      alt="Card Image 1"
+                      className="card-img-top"
+                    />
+                  </div>
+                  <div className="card">
+                    <img
+                      src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
+                      alt="Card Image 2"
+                      className="card-img-top"
+                    />
+                  </div>
+                </div>
+                <div className="card-group">
+                  <div className="card">
+                    <img
+                      src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
+                      alt="Card Image 3"
+                      className="card-img-top"
+                    />
+                  </div>
+                  <div className="card">
+                    <img
+                      src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
+                      alt="Card Image 4"
+                      className="card-img-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="myy-section">
+        <div className="other-custom-row row">
+          <div className="img-cont col-md-4">
             <img
               src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
               alt="Modern Luxury Bedroom"
-              className="cover-image"
+              className="img-fluid"
             />
           </div>
-          <div className="col-custom">
-            <div className="card-group-container">
-              <div className="card-group">
-                <div className="card">
-                  <img
-                    src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-                    alt="Card Image 1"
-                    className="card-img-top"
-                  />
+          <div className="col-md-6 rd-column-txt rd-row-cont">
+            <a href="#">Nabhananta Garden View</a>
+            <div className="other-rd-gap">
+              <div className="other-rd-gap inner-bed-rd-cont">
+                <div className="bed-rd-cont">
+                  <IoBedOutline /> 2 beds
                 </div>
-                <div className="card">
-                  <img
-                    src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-                    alt="Card Image 2"
-                    className="card-img-top"
-                  />
+                <div className="bed-rd-cont">
+                  <MdBathroom /> 2 bathrooms
                 </div>
               </div>
-              <div className="card-group">
-                <div className="card">
-                  <img
-                    src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-                    alt="Card Image 3"
-                    className="card-img-top"
-                  />
-                </div>
-                <div className="card">
-                  <img
-                    src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-                    alt="Card Image 4"
-                    className="card-img-top"
-                  />
-                </div>
-              </div>
+              <p className="rd-descp1">
+                Unwind in our luxurious garden suite, designed for a seamless
+                indoor-outdoor experience. Large windows bathe the space in
+                natural light and showcase the breathtaking panorama.
+              </p>
+            </div>
+            <div>
+              <a className="rd-details" href="/rooms/room-details">
+                Room details
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section className="myy-section">
-      <div className="other-custom-row row">
-        <div className="img-cont col-md-4">
-          <img
-            src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-            alt="Modern Luxury Bedroom"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-md-6 rd-column-txt rd-row-cont">
-          <a href="#">Nabhananta Garden View</a>
-          <div className="other-rd-gap">
-            <div className="other-rd-gap inner-bed-rd-cont">
-              <div className="bed-rd-cont">
-                <IoBedOutline /> 2 beds
-              </div>
-              <div className="bed-rd-cont">
-                <MdBathroom /> 2 bathrooms
-              </div>
-            </div>
-            <p className="rd-descp1">
-              Unwind in our luxurious garden suite, designed for a seamless indoor-outdoor experience. Large windows bathe the space in natural light and showcase the breathtaking panorama.
-            </p>
-          </div>
-          <div>
-            <a className="rd-details" href="/rooms/room-details">
-              Room details
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className=" cont container">
+      </section>
+      <section className=" cont container">
         <section className="row decp">
           <div className="rd-descp-fac-rule-cont">
             <div className="custom-col col-7">
@@ -181,7 +202,7 @@ export default function Room2() {
                         </div>
                         <div className="col-6">
                           <div className="facility-col">
-                            <FaHotTubPerson  /> <span>Geezer</span>
+                            <FaHotTubPerson /> <span>Geezer</span>
                           </div>
                         </div>
                       </div>
@@ -284,12 +305,7 @@ export default function Room2() {
                       />
                     </div>
                     <div className="rd-send-btn-cont">
-                      <touchableHilight
-                        className="rd-form-send"
-                        onClick={sendBtn}
-                      >
-                        <span>Send</span>
-                      </touchableHilight>
+                      <span>Send</span>
                     </div>
                   </div>
                 </div>
@@ -298,6 +314,70 @@ export default function Room2() {
           </div>
         </section>
       </section>
+
+      <form className="query-form" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="phone">Phone No</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
       <Footer />
     </>
   );

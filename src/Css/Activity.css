@@ -226,7 +226,9 @@ p {
   height: 100%;
   object-fit: cover;
 }
-
+.section2-exp-body-cont{
+  padding-bottom: 50px;
+}
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .exp-body-cont h1,
