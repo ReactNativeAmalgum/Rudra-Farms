@@ -430,68 +430,33 @@ html {
   padding-top: 90px;
 }
 
+
 .exp-gallery-cont {
   display: flex;
+  justify-content: center; /* Center the content horizontally */
+  padding: 20px;
+}
+
+.exp-gallery-cont-row {
+  /* background-color: yellow; */
   width: 100%;
-  justify-content: center;
+  display: flex;
+  justify-content: center; /* Center columns within the row */
   align-items: center;
-  flex-direction: column;
-  padding-left: 25px;
 }
 
-.exp-gallery-cont-a {
-  font-size: 18px;
+.exp-gallery-cont-col {
+  /* border: 1px solid black; */
   display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  color: black;
-  font-family: "Jost";
-  font-weight: 300;
+  gap: 20px;
+  justify-content: center; /* Center images within the column */
 }
 
-.gallery-row-cont {
-  width: 70.5em;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+.exp-gallery-cont-col img {
+  width: 240px;
 }
 
-.gallery-img-col {
-  flex: 1;
-}
-
-.gallery-img-cont {
-  position: relative;
-  width: 100%;
-}
-
-.gallery-img-cont img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.img-overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.gallery-img-cont:hover .img-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.gallery-img-cont:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
+/*************acc0********************/
 
 .home-acco-cont a {
   margin-top: 10%;
@@ -710,7 +675,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.9);
-  background-image: url("https://images.pexels.com/photos/24805054/pexels-photo-24805054/free-photo-of-view-of-the-terrace-with-a-swimming-pool-at-the-resort.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("../Assets//images/counter.png") !important;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -877,10 +842,9 @@ html {
   .home-acco-cont {
     padding: 0px !important;
   }
-  .exp-gallery-cont{
+  .exp-gallery-cont {
     padding-left: 0px;
   }
-
 }
 
 /* For screens smaller than 425px */
@@ -911,22 +875,22 @@ html {
   }
 }
 
-@media (max-width: 429px){
-  .home-exp-cont{
+@media (max-width: 429px) {
+  .home-exp-cont {
     padding: 0px !important;
   }
-  .exp-description{
+  .exp-description {
     margin-top: 30px;
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin: 0px !important;
   }
-  .acco-description{
+  .acco-description {
     margin: 0px !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .exp-h3-cont{
+  .exp-h3-cont {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -934,14 +898,13 @@ html {
     justify-content: center;
     padding-left: 0px !important;
   }
-  .exp-description p{
+  .exp-description p {
     align-self: center;
-
   }
-  p{
+  p {
     padding-left: 0px !important;
   }
-  .exp-gallery-cont{
+  .exp-gallery-cont {
     padding-left: 0px;
   }
 }

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import NavBar from "../Components/NavBar"; // Import NavBar if needed
 import Footer from "../Components/Footer";
 import "../Css/Contact.css";
-import dash from "../Assets/dash.png";
 import { GoDash } from "react-icons/go";
 
 export default function Contact_Us() {
@@ -143,27 +142,7 @@ export default function Contact_Us() {
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-      <section className="section3-faq">
-        <div className="section3-faq-row">
-          <div className="section3-faq-col-8">
-            <div className="section3-faq-cont">
-              <h3>See Our FAQ's</h3>
-              <div className="section3-faq-para">
-                <p>
-                  The common questions we receive from our customers are all
-                  covered in our FAQ section. Please take a look to get an
-                  answer to your question right away.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="section3-faq-col-2">
-            <div>
-            <span>GO TO FAQ'S</span>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <Footer />
     </>
   );

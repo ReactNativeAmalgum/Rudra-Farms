@@ -2,27 +2,9 @@
 
 /*****************room**/
 /* General Styles */
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
 
-.col-7,
-.col-5 {
-  padding: 15px;
-}
 
-.custom-col,
-.custom2-col {
-  flex: 1;
-}
 
 .all-section-col {
   display: flex;
@@ -92,11 +74,7 @@
     text-align: left;
   }
 
-  .col-7,
-  .col-5 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+
   .form-col .div-en-form-cont {
     max-width: 600px; /* Increase the max-width of the form container for screen widths below 1024px */
   }
@@ -104,11 +82,7 @@
 
 @media (max-width: 992px) {
   /* Tablets and smaller screens */
-  .col-7,
-  .col-5 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+
 
   .room-column-txt a {
     font-size: 25px;

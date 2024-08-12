@@ -3,6 +3,7 @@ import NavBar from "../Components/NavBar"; // Import NavBar if needed
 import "../Css/About.css";
 import Footer from "../Components/Footer";
 import { GoDash } from "react-icons/go";
+import { ImageData } from "../Assets/images/Imagedata";
 
 export default function About() {
   return (
@@ -74,7 +75,7 @@ export default function About() {
               <div className="section2-img-cont">
                 <img
                   // className="about-img"
-                  src="https://malharmachi.com/wp-content/uploads/2020/01/abt3.jpg"
+                  src={ImageData.about2}
                   alt="img "
                 />
               </div>

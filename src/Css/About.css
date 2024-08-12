@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://th.bing.com/th/id/R.7a9de18404fee58c268f44238c8e7031?rik=p659bV13iFrYVA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f35%2fA_hut.jpg&ehk=f6nPK2M%2fuTyqbqnnwTZd6ur58KnCvDYUQ9aDjV0S6Us%3d&risl=&pid=ImgRaw&r=07");
+  background-image: url("../Assets/images/about1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -126,21 +126,6 @@
   color: white;
 }
 
-.row {
-  /* background-color: aqua; */
-}
-
-/* .col-6 img {
-  align-self: flex-end;
-  padding-left: 50px;
-  width: 95%;
-  height: 600px;
-} */
-
-.col-6 {
-  color: black;
-  text-align: left;
-}
 
 .col-6 h3 {
   font-family: "Cormorant Garamond";

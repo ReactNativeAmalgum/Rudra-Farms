@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../Assets/logo.png";
 import "../Css/NavBar.css";
-import menu from "../Assets/menu.png";
+import { ImageData } from "../Assets/images/Imagedata";
 
 export default function NavBar() {
   const [navToggle, setNavbarToggle] = useState(false);
@@ -25,7 +24,7 @@ export default function NavBar() {
         <span class="navbar-toggler-icon"></span>
       </button>
       <img
-        src={logo}
+        src={ImageData.logo}
         alt={"logo"}
         style={{ width: 80, borderRadius: "50%", height: 80, marginLeft: 10 }}
       />

@@ -218,7 +218,7 @@ p {
   align-items: center;
   height: 510px !important;
   width: 510px !important;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .activity-swiper-card-cont img {
@@ -229,6 +229,10 @@ p {
 .section2-exp-body-cont{
   padding-bottom: 50px;
 }
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .exp-body-cont h1,
@@ -307,6 +311,7 @@ p {
   .onlyImg-room-row-cont {
     /* width: 100%; */
     width: 500px !important;
+    background-color: aqua;
   }
 
 

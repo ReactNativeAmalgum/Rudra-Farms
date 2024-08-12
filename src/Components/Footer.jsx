@@ -16,7 +16,6 @@ import { CgMail } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 import "../Css/Footer.css";
-import logo from "../Assets/logo.png";
 
 export default function Footer() {
   return (

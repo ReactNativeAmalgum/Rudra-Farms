@@ -10,6 +10,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 import "../Css/Activity.css";
+import { ImageData } from "../Assets/images/Imagedata";
+
+const ActivityImg = [ImageData.dart, ImageData.card, ImageData.caroom];
 
 export default function Activity() {
   return (
@@ -38,31 +41,35 @@ export default function Activity() {
           <div className="room-row-cont row">
             <div className="onlyImg-room-row-cont col-6">
               <Swiper
-                navigation={true}
-                modules={[Navigation, Autoplay]}
+                centeredSlides={true}
                 autoplay={{
-                  delay: 3000, // Delay between slides in ms
-                  disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+                  delay: 9500,
+                  disableOnInteraction: false,
                 }}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
                     <img
-                      src="https://media.istockphoto.com/id/1253225997/photo/above-view-of-kids-playing-ludo-game.jpg?s=1024x1024&w=is&k=20&c=ROomxY8gaUEyOufzGy6q3JPW3X6oJTRql-kJu5muB4Q="
-                      alt="Activity 1"
+                      src={ImageData.card}
+                      alt="card"
                     />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
                     <img
-                      src="https://media.istockphoto.com/id/1472113696/photo/senior-people-playing-chess-at-home-stock-photo.jpg?s=1024x1024&w=is&k=20&c=IPHRetEDBqUa7_t8PbXLGNok7aoYYUrOf6jk24Heb3I="
-                      alt="Activity 2"
+                      src={ImageData.caroom}
+                      alt="card"
                     />
                   </div>
                 </SwiperSlide>
-              </Swiper>{" "}
+              </Swiper>
             </div>
             <div className="room-column-txt room-row-cont col-6">
               <a>Indore Activities</a>
@@ -98,10 +105,10 @@ export default function Activity() {
                 navigation={true}
                 modules={[Navigation, Autoplay]}
                 className="mySwiper"
-                autoplay={{
-                  delay: 3050, // Delay between slides in ms
-                  disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-                }}
+                // autoplay={{
+                //   delay: 3050, // Delay between slides in ms
+                //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+                // }}
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
