@@ -155,10 +155,10 @@ export default function Home() {
             modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
             className="mySwiper"
             pagination={{ clickable: true }}
-            // autoplay={{
-            //   delay: 1000, // Delay between slides in ms
-            //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-            // }}
+            autoplay={{
+              delay: 1000, // Delay between slides in ms
+              disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            }}
             breakpoints={{
               1440: {
                 slidesPerView: 3,
@@ -322,10 +322,10 @@ export default function Home() {
             modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
             className="mySwiper"
             pagination={{ clickable: true }}
-            // autoplay={{
-            //   delay: 1000, // Delay between slides in ms
-            //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-            // }}
+            autoplay={{
+              delay: 1000, // Delay between slides in ms
+              disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            }}
             breakpoints={{
               1440: {
                 slidesPerView: 1,
