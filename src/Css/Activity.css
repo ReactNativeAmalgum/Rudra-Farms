@@ -103,7 +103,6 @@
 }
 
 .exp-row-cont {
-  /* background-color: aqua; */
   padding-left: 20px;
 }
 
@@ -111,7 +110,6 @@
   /* border:1px solid black; */
   justify-content: center;
   /* align-items: center; */
-  /* background-color: aqua; */
 }
 .section2-room-row-cont {
   justify-content: center;
@@ -218,7 +216,6 @@ p {
   align-items: center;
   height: 510px !important;
   width: 510px !important;
-  /* background-color: aqua; */
 }
 
 .activity-swiper-card-cont img {
@@ -281,7 +278,6 @@ p {
     align-items: center;
     height: 410px !important;
     width: 510px !important;
-    background-color: aqua;
   }
 
   .activity-swiper-card-cont img {
@@ -311,7 +307,6 @@ p {
   .onlyImg-room-row-cont {
     /* width: 100%; */
     width: 500px !important;
-    background-color: aqua;
   }
 
 

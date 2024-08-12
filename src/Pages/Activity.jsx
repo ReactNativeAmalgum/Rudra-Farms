@@ -55,18 +55,12 @@ export default function Activity() {
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
-                    <img
-                      src={ImageData.card}
-                      alt="card"
-                    />
+                    <img src={ImageData.card} alt="card" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
-                    <img
-                      src={ImageData.caroom}
-                      alt="card"
-                    />
+                    <img src={ImageData.caroom} alt="card" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -105,24 +99,24 @@ export default function Activity() {
                 navigation={true}
                 modules={[Navigation, Autoplay]}
                 className="mySwiper"
-                // autoplay={{
-                //   delay: 3050, // Delay between slides in ms
-                //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-                // }}
+                autoplay={{
+                  delay: 3050, // Delay between slides in ms
+                  disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+                }}
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
                     <img
-                      src="https://plus.unsplash.com/premium_photo-1685303469211-7fa57a7dd43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGdhbWVzfGVufDB8fDB8fHww"
-                      alt="Activity 1"
+                      src="https://img.freepik.com/free-photo/minimal-style-sport-arrangement_23-2149006345.jpg?w=996&t=st=1723466523~exp=1723467123~hmac=f2bf43c86c0a83a63adf2630df193e977fd22b1a853179a3565986ea2ccab19f"
+                      alt="cricket"
                     />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
                     <img
-                      src="https://plus.unsplash.com/premium_photo-1708558513102-c9c9f7d0b970?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3V0ZG9vciUyMGdhbWVzJTIwaW4lMjByZXNvcnR8ZW58MHx8MHx8fDA%3D"
-                      alt="Activity 2"
+                      src="https://cdn2.momjunction.com/wp-content/uploads/2015/10/Foxes-and-hares-a-group-game-for-kids.jpg.avif"
+                      alt="Chasing"
                     />
                   </div>
                 </SwiperSlide>

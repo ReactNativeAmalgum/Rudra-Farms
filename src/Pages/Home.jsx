@@ -173,13 +173,102 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-kids-bedroom-dustry-rose-black-and-white-pink-with-desk.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-bedroom-furniture-set-turquoise-large-window-polka-dot-wall-art.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/Luxury-Bedroom-Navy-Blue-Decorating-Ideas-Oversized-Headboard.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-master-suite-grey-with-large-closet-and-seating-area.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-kids-bedroom-dustry-rose-black-and-white-pink-with-desk.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-brown-master-bedroom-with-mirrored-headboard-and-walk-in-closet.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-grey-master-bedroom-with-textured-accent-wall-and-flock-of-bird-metal-wall-art.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
+                    <span className="acc-swiper-card-text-s">
+                      1 bed / 1 bathroom
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
                   <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1478-HDRcmp-570x600.jpg" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
+                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
                     <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
+                      1 bed / 1 bathroom
                     </span>
                   </div>
                 </div>
@@ -188,13 +277,14 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
+                  <img
+                    src="                https://th.bing.com/th/id/R.88266eddb0ea3848a2f230273474848c?rik=KvfESeYjZEYwVQ&riu=http%3a%2f%2fwww.pinegrovemountainlodge.com%2fwp-content%2fuploads%2f2017%2f02%2fDSC00141.jpg&ehk=6t1gy7IXa6pb4UhJYq7Gpfj6LeZH1fxcqHRG%2fvW2IUw%3d&risl=&pid=ImgRaw&r=0
+"
+                  />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
+                    <h3 className="acc-swiper-card-text-h">Dormitory Room</h3>
                     <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
+                      11 beds / 4 bathroom
                     </span>
                   </div>
                 </div>
@@ -203,13 +293,58 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1394-HDRcmp-570x600.jpg" />
+                  <img src="https://2.bp.blogspot.com/-VU7b4YemYTI/UOmr8AG3IMI/AAAAAAAABeI/6in3rIMnDkc/s1600/Nature-Luxury-Villa-Bedroom-Design-Ideas.jpg" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
+                    <h3 className="acc-swiper-card-text-h">Sweet Room</h3>
                     <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
+                      2 double beds / 1 bathroom(bath tub)
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="acco-description mt-5">
+          <div className="acco-h3-cont">
+            <h3 className="acco-h3">Explore our villa</h3>
+            <p>
+              Elevate your stay in scenic nature. Stay in best honeymoon resort
+              near Mumbai & Pune. Rooms & Cottages at punes only Mountain View
+              resort.
+            </p>
+          </div>
+        </div>
+
+        <div className="acc-swiper-cont">
+          <Swiper
+            navigation={true}
+            modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
+            className="mySwiper"
+            pagination={{ clickable: true }}
+            // autoplay={{
+            //   delay: 1000, // Delay between slides in ms
+            //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            // }}
+            breakpoints={{
+              1440: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className="acc-swiper-card-cont">
+                <div className="acc-wiper-card-cont-img">
+                  <img src="https://2.bp.blogspot.com/-VU7b4YemYTI/UOmr8AG3IMI/AAAAAAAABeI/6in3rIMnDkc/s1600/Nature-Luxury-Villa-Bedroom-Design-Ideas.jpg" />
+                  <div className="acc-swiper-card-text">
+                    <h3 className="acc-swiper-card-text-h">Villa</h3>
+                    <span className="acc-swiper-card-text-s">
+                      2 master bedroom / 3 bathroom / 1 arram chair
                     </span>
                   </div>
                 </div>
@@ -218,28 +353,11 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1524-HDRcmp-570x600.jpg" />
+                  <img src="https://i.pinimg.com/originals/3c/32/84/3c32847545140ff64f9e1109bad651df.jpg" />
                   <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
+                    <h3 className="acc-swiper-card-text-h">Villa</h3>
                     <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC02189cmp-570x600.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">
-                      Maharaja Family Bedroom
-                    </h3>
-                    <span className="acc-swiper-card-text-s">
-                      4 beds / 2 bathroom
+                      2 master bedroom / 3 bathroom / 1 arram chair
                     </span>
                   </div>
                 </div>
