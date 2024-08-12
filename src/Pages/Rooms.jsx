@@ -15,6 +15,7 @@ import { useNavigate } from "react-router";
 import NavBar from "../Components/NavBar";
 import room from "../Components/RoomData";
 import { Link } from "react-router-dom";
+import RoomData from "../Components/RoomData";
 
 export default function Room() {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export default function Room() {
       <section className="section1-rooom-body-cont">
         <div className="container text-center">
           <div className="rooom-row-cont row">
-            {room.map((v, i) => (
+            {RoomData.map((v, i) => (
               <>
                 <div className="section1-swipper-cont col-6">
                   <Swiper
