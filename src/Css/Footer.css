@@ -11,13 +11,6 @@
   padding-top: 2%;
 }
 
-.container {
-  max-width: 1200px;
-  /* margin: 0 auto; */
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
-}
 
 .footer-row {
   display: flex;
@@ -75,12 +68,12 @@
   .footer-row {
     flex-direction: column; /* Stack the columns vertically */
   }
-  
+
   .col-2 {
     width: 100%; /* Full width for extra small screens */
     text-align: center; /* Center text */
   }
-  
+
   .footer-row h3 {
     font-size: 20px;
   }
@@ -88,7 +81,7 @@
   .footer-row p {
     font-size: 14px;
   }
-  
+
   .social {
     flex-direction: column; /* Stack social icons vertically */
     align-items: center;
@@ -104,12 +97,12 @@
   .footer-row {
     flex-direction: column; /* Stack the columns vertically */
   }
-  
+
   .col-2 {
-    width: 100%; 
+    width: 100%;
     text-align: center;
   }
-  
+
   .footer-row h3 {
     font-size: 20px;
   }
@@ -117,13 +110,12 @@
   .footer-row p {
     font-size: 14px;
   }
-  
-  
+
   .social {
     flex-direction: row; /* Row layout for medium screens */
     /* justify-content: center; */
-    width: 500px!important;
-    gap:10px
+    width: 500px !important;
+    gap: 10px;
   }
 
   .social .icon {
@@ -133,21 +125,29 @@
   .social .icon {
     margin-top: 5px;
   }
+  .speacial-h3 {
+    width: max-content;
+  }
+  .footer-nav-cont{
+    width: max-content;
+  }
+  .social{
+    display: flex;
+    align-items: flex-start;
+  }
 }
-
 
 /* Medium screens (tablets, 600px to 900px) */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .footer-row {
     flex-direction: column; /* Stack the columns vertically */
   }
-  
+
   .col-2 {
     width: 100%; /* Full width for medium screens */
     text-align: left; /* Align text to left */
-
   }
-  
+
   .footer-row h3 {
     font-size: 22px;
   }
@@ -155,18 +155,17 @@
   .footer-row p {
     font-size: 15px;
   }
-  
+
   .social {
     flex-direction: row; /* Row layout for medium screens */
     /* justify-content: center; */
-    width: 500px!important;
-    gap:px
+    width: 500px !important;
+    gap: px;
   }
 
   .social .icon {
     margin-top: 3px;
   }
-
 
 }
 
@@ -180,7 +179,7 @@
     width: 24%; /* Adjust column width for larger screens */
     text-align: left; /* Align text to left */
   }
-  
+
   .footer-row h3 {
     font-size: 24px;
   }
@@ -188,9 +187,10 @@
   .footer-row p {
     font-size: 16px;
   }
-  
+
   .social {
     flex-direction: row; /* Row layout for large screens */
-    align-items: center;
+    /* align-items: center; */
   }
+  
 }

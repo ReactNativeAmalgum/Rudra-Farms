@@ -1,0 +1,182 @@
+
+
+/*****************room**/
+/* General Styles */
+
+
+
+
+.all-section-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* .heading-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+} */
+
+/* .rd-section3-descp-body-cont, 
+.rd-section4-facility-body-cont,
+.rd-section5-rules-body-cont {
+  margin-bottom: 20px;
+} */
+
+/* Image Section */
+/* .room-column-txt a {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+} */
+
+/* .inner-bed-room-cont {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+} */
+
+.bed-room-cont {
+  display: flex;
+  align-items: center;
+}
+
+.room-descp1 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Facility Section */
+/* .facilty-row-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+} */
+
+/* .facility-col {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+} */
+
+/* Form Section */
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .room-column-txt,
+  .inner-bed-room-cont,
+  .rd-section4-facility-body-cont,
+  .rd-section5-rules-body-cont {
+    text-align: left;
+  }
+
+
+  .form-col .div-en-form-cont {
+    max-width: 600px; /* Increase the max-width of the form container for screen widths below 1024px */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Tablets and smaller screens */
+
+
+  .room-column-txt a {
+    font-size: 25px;
+  }
+
+  .room-descp1 {
+    font-size: 14px;
+  }
+
+  .heading-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile devices */
+  .rd-form-first-last-cont {
+    flex-direction: column;
+  }
+
+  .rd-form-first-span {
+    width: 100%;
+  }
+  .room-column-txt .room-row-cont {
+    align-items: baseline !important;
+  }
+  .custom2-col {
+    width: -webkit-fill-available !important;
+
+  }
+  .form-col{
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small devices */
+  .heading-title {
+    font-size: 18px;
+  }
+
+  .room-column-txt a {
+    font-size: 18px;
+  }
+
+  .room-descp1 {
+    font-size: 12px;
+  }
+  .form-col{
+    width: 300px;
+    margin-left: 20px;
+  }
+}
+
+
+
+/*******************new form*******************/
+.query-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

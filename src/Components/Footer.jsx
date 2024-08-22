@@ -16,7 +16,6 @@ import { CgMail } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 import "../Css/Footer.css";
-import logo from "../Assets/logo.png";
 
 export default function Footer() {
   return (
@@ -31,15 +30,15 @@ export default function Footer() {
               We have been in this business for two years and we started this resort one year ago.
               </p>
             </div>
-            <div className="col-2">
+            <div className="footer-nav-cont  col-2">
               <h3>General</h3>
-              <p>About Us</p>
+              <p className="footer-nav-cont" >About Us</p>
               <p>Rooms</p>
               <p>Services</p>
               <p>Experience</p>
               <p>FAQ's</p>
             </div>
-            <div className="col-2">
+            <div className="footer-nav-cont col-2">
               <h3>Connect</h3>
               <div className="social">
                 <FaFacebookF className="icon" /> <p>Facebook</p>
@@ -51,7 +50,7 @@ export default function Footer() {
                 <FaWhatsapp className="icon" /> <p>WhatsApp</p>
               </div>
             </div>
-            <div className="col-2">
+            <div className="footer-nav-cont col-2">
              <div className="speacial-h3">
              <h3>Contact Us</h3>
              </div>

@@ -10,6 +10,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 import "../Css/Activity.css";
+import { ImageData } from "../Assets/images/Imagedata";
+
+const ActivityImg = [ImageData.dart, ImageData.card, ImageData.caroom];
 
 export default function Activity() {
   return (
@@ -38,31 +41,29 @@ export default function Activity() {
           <div className="room-row-cont row">
             <div className="onlyImg-room-row-cont col-6">
               <Swiper
+                centeredSlides={true}
+                autoplay={{
+                  delay: 9500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
                 navigation={true}
-                modules={[Navigation, Autoplay]}
-                // autoplay={{
-                //   delay: 3000, // Delay between slides in ms
-                //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-                // }}
+                modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
-                    <img
-                      src="https://media.istockphoto.com/id/1253225997/photo/above-view-of-kids-playing-ludo-game.jpg?s=1024x1024&w=is&k=20&c=ROomxY8gaUEyOufzGy6q3JPW3X6oJTRql-kJu5muB4Q="
-                      alt="Activity 1"
-                    />
+                    <img src={ImageData.card} alt="card" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
-                    <img
-                      src="https://media.istockphoto.com/id/1472113696/photo/senior-people-playing-chess-at-home-stock-photo.jpg?s=1024x1024&w=is&k=20&c=IPHRetEDBqUa7_t8PbXLGNok7aoYYUrOf6jk24Heb3I="
-                      alt="Activity 2"
-                    />
+                    <img src={ImageData.caroom} alt="card" />
                   </div>
                 </SwiperSlide>
-              </Swiper>{" "}
+              </Swiper>
             </div>
             <div className="room-column-txt room-row-cont col-6">
               <a>Indore Activities</a>
@@ -82,7 +83,7 @@ export default function Activity() {
           <div className="section2-room-row-cont row">
             <div
               style={{ paddingLeft: 80 }}
-              className="room-column-txt-alt room-row-cont col-6"
+              className=" room-column-txt-alt order-2 order-md-1 room-row-cont col-6"
             >
               <a>Outdoor Activites</a>
 
@@ -93,29 +94,29 @@ export default function Activity() {
                 mattis ultrices sem iaculis eleifend adipiscing libero semper.
               </p>
             </div>
-            <div className="onlyImg-room-row-cont  col-6">
+            <div className=" order-1 order-md-2 onlyImg-room-row-cont  col-6">
               <Swiper
                 navigation={true}
                 modules={[Navigation, Autoplay]}
                 className="mySwiper"
-                // autoplay={{
-                //   delay: 3050, // Delay between slides in ms
-                //   disableOnInteraction: false, // Autoplay will not be disabled after user interactions
-                // }}
+                autoplay={{
+                  delay: 3050, // Delay between slides in ms
+                  disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+                }}
               >
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
                     <img
-                      src="https://plus.unsplash.com/premium_photo-1685303469211-7fa57a7dd43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGdhbWVzfGVufDB8fDB8fHww"
-                      alt="Activity 1"
+                      src="https://img.freepik.com/free-photo/minimal-style-sport-arrangement_23-2149006345.jpg?w=996&t=st=1723466523~exp=1723467123~hmac=f2bf43c86c0a83a63adf2630df193e977fd22b1a853179a3565986ea2ccab19f"
+                      alt="cricket"
                     />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="activity-swiper-card-cont">
                     <img
-                      src="https://plus.unsplash.com/premium_photo-1708558513102-c9c9f7d0b970?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3V0ZG9vciUyMGdhbWVzJTIwaW4lMjByZXNvcnR8ZW58MHx8MHx8fDA%3D"
-                      alt="Activity 2"
+                      src="https://cdn2.momjunction.com/wp-content/uploads/2015/10/Foxes-and-hares-a-group-game-for-kids.jpg.avif"
+                      alt="Chasing"
                     />
                   </div>
                 </SwiperSlide>
