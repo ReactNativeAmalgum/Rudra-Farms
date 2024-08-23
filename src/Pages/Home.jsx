@@ -13,6 +13,8 @@ import Footer from "../Components/Footer";
 import { Image } from "antd";
 import "../Css/Home.css";
 import { ImageData } from "../Assets/images/Imagedata";
+import RoomData from "../Components/RoomData";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +27,7 @@ export default function Home() {
 
     return () => clearInterval(interval);
   }, [images.length]);
-
+  const navigation = useNavigate();
   return (
     <>
       <section className="home-body-cont">
@@ -170,139 +172,34 @@ export default function Home() {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-kids-bedroom-dustry-rose-black-and-white-pink-with-desk.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
+            {RoomData.map((img, i) => (
+              <SwiperSlide>
+                <div
+                  onClick={() => {
+                    new Promise((resolve) => {
+                      navigation(`/room-details/${img.id}`);
+                      resolve();
+                    }).then(() => {
+                      setTimeout(() => {
+                        window.scrollTo(0, 0);
+                      }, 50);
+                    });
+                  }}
+                  className="acc-swiper-card-cont"
+                >
+                  <div className="acc-wiper-card-cont-img">
+                    <img src={img.image1[0]} />
+
+                    <div className="acc-swiper-card-text">
+                      <h3 className="acc-swiper-card-text-h">{img.heading1}</h3>
+                      <span className="acc-swiper-card-text-s">
+                        1 bed / 1 bathroom
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-bedroom-furniture-set-turquoise-large-window-polka-dot-wall-art.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/Luxury-Bedroom-Navy-Blue-Decorating-Ideas-Oversized-Headboard.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-master-suite-grey-with-large-closet-and-seating-area.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-kids-bedroom-dustry-rose-black-and-white-pink-with-desk.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-brown-master-bedroom-with-mirrored-headboard-and-walk-in-closet.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://www.home-designing.com/wp-content/uploads/2018/10/luxury-grey-master-bedroom-with-textured-accent-wall-and-flock-of-bird-metal-wall-art.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://malharmachi.com/wp-content/uploads/2023/03/DSC1478-HDRcmp-570x600.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Delux Bedroom</h3>
-                    <span className="acc-swiper-card-text-s">
-                      1 bed / 1 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img
-                    src="                https://th.bing.com/th/id/R.88266eddb0ea3848a2f230273474848c?rik=KvfESeYjZEYwVQ&riu=http%3a%2f%2fwww.pinegrovemountainlodge.com%2fwp-content%2fuploads%2f2017%2f02%2fDSC00141.jpg&ehk=6t1gy7IXa6pb4UhJYq7Gpfj6LeZH1fxcqHRG%2fvW2IUw%3d&risl=&pid=ImgRaw&r=0
-"
-                  />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Dormitory Room</h3>
-                    <span className="acc-swiper-card-text-s">
-                      11 beds / 4 bathroom
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="acc-swiper-card-cont">
-                <div className="acc-wiper-card-cont-img">
-                  <img src="https://2.bp.blogspot.com/-VU7b4YemYTI/UOmr8AG3IMI/AAAAAAAABeI/6in3rIMnDkc/s1600/Nature-Luxury-Villa-Bedroom-Design-Ideas.jpg" />
-                  <div className="acc-swiper-card-text">
-                    <h3 className="acc-swiper-card-text-h">Sweet Room</h3>
-                    <span className="acc-swiper-card-text-s">
-                      2 double beds / 1 bathroom(bath tub)
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
         <div className="acco-description mt-5">
@@ -427,7 +324,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                  <img src={ImageData.ludo} alt="Ludo"/>
+                  <img src={ImageData.ludo} alt="Ludo" />
                   <div className="acc-swiper-card-text">
                     <h3 className="acc-swiper-card-text-h">Ludo</h3>
                   </div>
@@ -437,8 +334,8 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                <img src={ImageData.chess} alt="chess"/>
-                <div className="acc-swiper-card-text">
+                  <img src={ImageData.chess} alt="chess" />
+                  <div className="acc-swiper-card-text">
                     <h3 className="acc-swiper-card-text-h">Chess</h3>
                   </div>
                 </div>
@@ -448,8 +345,8 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                <img src={ImageData.dart} alt="dart"/>
-                <div className="acc-swiper-card-text">
+                  <img src={ImageData.dart} alt="dart" />
+                  <div className="acc-swiper-card-text">
                     <h3 className="acc-swiper-card-text-h">Dart Board</h3>
                   </div>
                 </div>
@@ -458,8 +355,8 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                <img src={ImageData.table_tennis} alt="table_tennis"/>
-                <div className="acc-swiper-card-text">
+                  <img src={ImageData.table_tennis} alt="table_tennis" />
+                  <div className="acc-swiper-card-text">
                     <h3 className="acc-swiper-card-text-h">Table Tennis</h3>
                   </div>
                 </div>
@@ -468,13 +365,13 @@ export default function Home() {
             <SwiperSlide>
               <div className="acc-swiper-card-cont">
                 <div className="acc-wiper-card-cont-img">
-                <img src={ImageData.football} alt="football"/>
-                <div className="acc-swiper-card-text">
+                  <img src={ImageData.football} alt="football" />
+                  <div className="acc-swiper-card-text">
                     <h3 className="acc-swiper-card-text-h">Table Tennis</h3>
                   </div>
                 </div>
               </div>
-            </SwiperSlide>  
+            </SwiperSlide>
           </Swiper>
         </div>
         <div className="exp-description-2">

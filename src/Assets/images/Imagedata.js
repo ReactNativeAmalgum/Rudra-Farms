@@ -41,3 +41,10 @@ export const ImageData = {
     about1,
     about2,
 };
+
+
+// export const RoomImages = [
+//     {
+//         id: 1,
+//     }
+// ]

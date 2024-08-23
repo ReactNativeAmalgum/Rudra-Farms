@@ -27,6 +27,8 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/rooms/room-details/:id" element={<RoomDetails />} />
+
+          <Route path="/room-details/:id" element={<RoomDetails />} />
           <Route path="/rooms/room2" element={<Room2 />} />
           {/* {
             RoomData.map((e, i) => (

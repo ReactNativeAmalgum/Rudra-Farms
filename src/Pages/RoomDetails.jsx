@@ -281,11 +281,15 @@ export default function RoomDetails() {
         <div className="other-custom-row row">
           <h3 className="heading-title">Other Room</h3>
           <div className="col-md-6">
-            <img
-              src="https://www.home-designing.com/wp-content/uploads/2018/10/Modern-Luxury-Bedroom-With-Black-Wall-And-Geometric-Painting.jpg"
-              alt="Modern Luxury Bedroom"
-              className="img-fluid"
-            />
+            {RoomData.filter((img) => img.id === 1).map((img, i) => (
+              <div key={i} className="img-group">
+                <img
+                  src={img.image1[0]} // Access the first image in the image1 array
+                  alt="Modern Luxury Bedroom"
+                  className="img-fluid"
+                />
+              </div>
+            ))}
           </div>
           <div className="col-md-6 rd-column-txt rd-row-cont">
             <a href="#">Nabhananta Garden View</a>
